@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<span><b>Caculator</b></span><br>
+<input id="nhapso" type="number" name="number">
+<input id="nhapso2" type="number" name="number2"><br>
+<button onclick="tinhtoan('c')">Addition(+)</button>
+<button onclick="tinhtoan('d')">Subtraction(-)</button>
+<button onclick="tinhtoan('e')">Multiplication(*)</button>
+<button onclick="tinhtoan('f')">Division(/)</button>
+</body>
+<script >
+    function tinhtoan(value) {
+        let a=document.getElementById("nhapso").value;
+        let b=document.getElementById("nhapso2").value;
+        a=parseInt(a);
+        b=parseInt(b);
+        if(value=='c'){
+            alert(a+b);
+        }
+        if(value=='d'){
+            alert(a-b);
+        }
+        if(value=='e'){
+            alert(a*b);
+        }
+        if(value=='f'){
+            alert(a/b);
+        }
+    }
+</script>
+</body>
+</html>
