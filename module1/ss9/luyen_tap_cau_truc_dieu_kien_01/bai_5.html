@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  let kiemtra = parseInt(prompt("Nhap diem kiem tra"));
+  let giuaki = parseInt(prompt("Nhap diem thi giua ki"));
+  let cuoiki = parseInt(prompt("Nhap diem thi cuoi ki"))
+  let tb = (kiemtra+(giuaki*2)+(cuoiki*3))/6;
+   document.write("Diem trung binh cua ban la: "+tb);
+
+
+  if(tb>=8){
+    document.write("<br>Ban duoc hoc sinh gioi</br>");
+  } else if(tb>=7){
+    document.write("<br>Ban duoc hoc sinh kha</br>");
+  } else if(tb>=5){
+    document.write("<br>Ban duoc hoc sinh trung binh</br>");
+  } else {
+    document.write("<br>Ban duoc hoc sinh yeu</br>");
+  }
+</script>
+</body>
+</html>

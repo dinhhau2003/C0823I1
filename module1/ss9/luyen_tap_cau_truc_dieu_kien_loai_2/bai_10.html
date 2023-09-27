@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Tính Giá Điện</h1>
+
+<label for="so-kwh">Nhập số kWh sử dụng:</label>
+<input type="number" id="so-kwh">
+
+<button onclick="tinhGiaDien()">Tính Giá Điện</button>
+
+<div id="ket-qua"></div>
+
+<script>
+    function tinhGiaDien() {
+        var soKwh = parseFloat(document.getElementById("so-kwh").value);
+        var giaDien;
+
+        if (soKwh <= 50) {
+            giaDien = soKwh * 1000;
+        } else if (soKwh <= 100) {
+            giaDien = 50 * 1000 + (soKwh - 50) * 1200;
+        } else if (soKwh <= 200) {
+            giaDien = 50 * 1000 + 50 * 1200 + (soKwh - 100) * 1500;
+        } else {
+            giaDien = 50 * 1000 + 50 * 1200 + 100 * 1500 + (soKwh - 200) * 2000;
+        }
+
+        document.getElementById("ket-qua").innerHTML = "Giá điện phải trả là: " + giaDien.toLocaleString() + " VND";
+    }
+</script>
+</body>
+</html>

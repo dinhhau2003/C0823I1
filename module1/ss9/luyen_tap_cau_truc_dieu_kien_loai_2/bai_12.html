@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Tính Lãi Ngân Hàng</h1>
+
+<label for="so-tien">Số tiền ban đầu (VND):</label>
+<input type="number" id="so-tien" min="0">
+
+<label for="so-thang">Số tháng cho vay:</label>
+<input type="number" id="so-thang" min="1">
+
+<label for="lai-xuat">Lãi xuất hàng tháng (%):</label>
+<input type="number" id="lai-xuat" min="0">
+
+<button onclick="tinhLai()">Tính Lãi</button>
+
+<div id="ket-qua"></div>
+
+<script>
+    function tinhLai() {
+        var soTienBanDau = parseFloat(document.getElementById("so-tien").value);
+        var soThangChoVay = parseInt(document.getElementById("so-thang").value);
+        var laiXuatHangThang = parseFloat(document.getElementById("lai-xuat").value);
+
+        var lai = 0;
+
+        for (var i = 0; i < soThangChoVay; i++) {
+            lai += (soTienBanDau * laiXuatHangThang / 100);
+            soTienBanDau += (soTienBanDau * laiXuatHangThang / 100);
+        }
+
+        var tongSoTien = soTienBanDau + lai;
+
+        document.getElementById("ket-qua").innerHTML = "Số tiền sau " + soThangChoVay + " tháng là: " + tongSoTien.toLocaleString() + " VND (gồm " + lai.toLocaleString() + " VND lãi)";
+    }
+</script>
+</body>
+</html>

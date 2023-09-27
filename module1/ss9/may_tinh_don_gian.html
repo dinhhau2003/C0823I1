@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+
+        }
+        #container>#kq{
+            width: 17em;
+            height: 3em;
+
+        }
+        #container>input{
+            width: 3em;
+            height: 3em;
+            margin: 0.2em;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <input type="text" id="kq" placeholder="Hiển thị kết quả"/><br>
+    <input type="button" value="1" onclick="set_num(this.value)"/>
+    <input type="button" value="2" onclick="set_num(this.value)"/>
+    <input type="button" value="3" onclick="set_num(this.value)"/>
+    <input type="button" value="+" onclick="set_num(this.value)"/>
+    <input type="button" value="-" onclick="set_num(this.value)"/><br>
+    <input type="button" value="4" onclick="set_num(this.value)"/>
+    <input type="button" value="5" onclick="set_num(this.value)"/>
+    <input type="button" value="6" onclick="set_num(this.value)"/>
+    <input type="button" value="*" onclick="set_num(this.value)"/>
+    <input type="button" value="/" onclick="set_num(this.value)"/><br>
+    <input type="button" value="7" onclick="set_num(this.value)"/>
+    <input type="button" value="8" onclick="set_num(this.value)"/>
+    <input type="button" value="9" onclick="set_num(this.value)"/>
+    <input type="button" value="=" onclick="ketQua()"/>
+    <input type="button" value="C" onclick="C()"/>
+</div >
+</body>
+<script >
+    var x='';
+    function a(id) {
+        return document.getElementById(id);
+
+    }
+    function set_num(num)  {
+
+        x+=num
+        a('kq').value=x;
+
+    }
+    function C() {
+        x='';
+        a('kq').value=x;
+
+    }
+    function ketQua() {
+        a('kq').value=eval(a('kq').value);
+        x=a('kq').value;
+
+
+    }
+</script>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // tính cước điện thoại
+    let soPhut = parseInt(prompt("Nhap so phut da su dung"));
+    let phi =0;
+    let tong = parseFloat();
+    let phiCoDinh = 25;
+
+    document.write("Ban da goi "+ soPhut +"phut"+"<br>");
+    if(soPhut>200){
+        phi = (soPhut-200)*200+150*400+50*600;
+    } else if(soPhut>50){
+        phi = (soPhut-50)*400+50*600;
+    } else {
+        phi = soPhut*600;
+    }
+    tong = 0.01*phi+phiCoDinh;
+
+    document.write("So tien phai nop cua ban la: "+tong);
+</script>
+</body>
+</html>

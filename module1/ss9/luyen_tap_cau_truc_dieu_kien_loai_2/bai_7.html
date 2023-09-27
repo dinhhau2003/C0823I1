@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("Nhap a"));
+    document.write("a = "+a+"<br>");
+    let b = parseInt(prompt("Nhap b"));
+    document.write("b = "+b+"<br>");
+    let c = parseInt(prompt("Nhap c"));
+    document.write("c ="+c+"<br>");
+    let delta = b*b-4*a*c;
+    let deta =  Math.sqrt(delta);
+
+    if(delta<0){
+        document.write("Phuong trinh vo nghiem");
+    } else if(delta == 0){
+        document.write('Phương trình có nghiệm kép ' + (-b/(2*a)));
+
+    } else{
+        document.write('Phương trình có là nghiệm : ' + ((-b+deta)/(2*a)) + ' và ' + ((-b-deta)/(2*a)) );
+
+    }
+</script>
+</body>
+</html>
