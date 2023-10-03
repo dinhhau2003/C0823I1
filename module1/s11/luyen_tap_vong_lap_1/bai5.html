@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let num1 =0;
+        let num2 =1;
+        let numNext =0;
+        let sum=1;
+        for( let i = 2; i <20; i++)
+        {
+            numNext = num1 + num2;
+            num1 = num2;
+            num2 = numNext;
+
+            sum+=numNext;
+        }
+        document.write(" tong cua 20 so dau tien fibonacci: " +sum);
+
+    </script>
+</body>
+</html>

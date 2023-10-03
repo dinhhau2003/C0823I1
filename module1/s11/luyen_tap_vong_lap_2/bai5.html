@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let soTienBanDau = prompt("Nhập số tiền bạn muốn cho vay");
+    let laiSuatHangNam = prompt("nhập lại suất mong muốn");
+    let soNamChoVay = parseInt(prompt("Hãy nhập vào số năm bạn muốn  cho vay"));
+    let tienTuongLaiPhaiTra;
+    let tienLaiThuVe;
+    for (let i = 1; i <= soNamChoVay; i++) {
+        tienTuongLaiPhaiTra = soTienBanDau * (Math.pow((1 + laiSuatHangNam), i)); //10000*(1+0.1)^1
+        tienLaiThuVe = parseInt(tienTuongLaiPhaiTra - soTienBanDau);
+        document.write("Tiền lãi thu về năm thứ " + " " + i + " " + "là" + " " + tienLaiThuVe + "<br>");
+    }
+</script>
+</body>
+</html>

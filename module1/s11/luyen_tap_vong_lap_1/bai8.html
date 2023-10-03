@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button id="btn" onclick="choi()" >button </button>
+    <script>
+        function choi() {
+            let from=parseInt(prompt("Khoan so bat dau tu "))
+
+            let comNum=Math.floor(Math.random()*from);
+
+            let userNum;
+            let checkLose=true;
+            for(let i=0;i<4;i++){
+                userNum=parseInt(prompt("Moi ban doan so"));
+                if(userNum===comNum){
+                    alert("Chien thang");
+                    checkLose=false;
+                    break;
+                }else if(userNum>comNum){
+                    alert("so nhap lon hon vui long nhap lai ")
+                }
+                else {
+                    alert("So nhap be hon vui long nhap lai ")
+                }
+
+            }
+            alert("ban hết số lần đoán");
+            if(checkLose){
+                document.write("Chuc ban may man lan sau")
+            }
+            console.log(comNum);
+        }
+    </script>
+</body>
+</html>

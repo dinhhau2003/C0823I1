@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // tam giac 1
+    let h = prompt("Nhap so");
+    for(let i=1;i<=h;i++){
+        for (let j=1; j<=i;j++){
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+    document.write("<br> <br>");
+
+    // //tam giac 2
+
+    if(h>0){
+        for(let i=h;i>=1;i--){
+            for (let j=1; j<=i;j++){
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+    }else {
+        alert("Nhap so lon hon 0");
+    }
+
+
+
+    //  //tam giac 3
+
+    if(h>0){
+        for(let i = 0; i <= h; i++) {
+            for (let j = i; j <= h; j++){document.write("&nbsp;&nbsp;&nbsp;");}
+            for (let j = 0; j < i; j++){document.write(' * ');}
+
+
+            document.write('<br>')
+        }
+
+    }
+    else {
+        alert("Nhap h >0")
+    }
+    document.write("<br> <br>");
+
+    //tam giac 4
+
+    if(h>0){
+        for(let i = 0; i <=h; i++) {
+            for (let j = 0; j < i; j++){
+                document.write('&nbsp;&nbsp;&nbsp;');
+            }
+
+            for (let j = i; j < h; j++){
+                document.write(" * ");
+            }
+
+            document.write('<br>')
+        }
+
+    }
+    else {
+        alert("Nhap h >0")
+    }
+
+
+
+</script>
+</body>
+</html>
