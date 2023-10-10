@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Tìm Kiếm</h1>
+<form>
+    <label for="word">Từ cần tìm kiếm:</label>
+    <input type="text" id="word" name="word">
+    <input type="button" value="Tìm kiếm" onclick="searchWord()">
+</form>
+
+<p id="result"></p>
+
+<script>
+    let englishWords = ["apple", "banana", "cherry", "date"];
+    let vietnameseWords = ["táo", "chuối", "anh đào", "quả chà là"];
+
+    function searchWord() {
+        let word = document.getElementById("word").value;
+        let index = englishWords.indexOf(word);
+        if (index === -1) {
+            document.getElementById("result").innerHTML = "Không tìm thấy từ";
+        } else {
+            document.getElementById("result").innerHTML = vietnameseWords[index];
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let numbers=[3,7,2,9,1,8,4,6,5];
+        let max=numbers[0];
+        let sum=0;
+        for (let i=0;i<numbers.length;i++){
+            if (numbers[i]>max){
+                max=numbers[i];
+
+            }
+            sum=sum+numbers[i];
+        }
+        let tb=sum/numbers.length;
+        document.writeln("max la: "+max);
+        document.writeln("tb cac phan tu trong mang la: "+tb);
+        // let numbers = [3, 7, 2, 9, 1, 8, 4, 6, 5];
+        // let max = Math.max(...numbers);
+        // let average = numbers.reduce((a, b) => a + b) / numbers.length;
+        //
+        // console.log("Giá trị lớn nhất trong mảng là " + max);
+        // console.log("Giá trị trung bình của các phần tử trong mảng là " + average);
+
+    </script>
+</body>
+</html>

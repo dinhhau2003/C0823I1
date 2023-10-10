@@ -6,9 +6,11 @@
 </head>
 <body>
 <script>
-    for (let i = 1; i <=10 ; i++) {
-        for (let j = 1; j <= 20 ; j++) {
-            if(i=== 1 || j === 1 || i === 10|| j ===20){
+    let m=parseInt(prompt("nhap chieu dai: "));
+    let n=parseInt(prompt("nhap chieu rong: "));
+    for (let i = 1; i <=m ; i++) {
+        for (let j = 1; j <= n ; j++) {
+            if(i=== 1 || j === 1 || i === m|| j ===n){
                 document.write("*");
             }else {
                 document.write("&nbsp&nbsp");

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+
+        let str=parseInt(prompt("nhap so phan tu cua mnag: "));
+        let arr=[];
+        for (let i=0;i<str;i++){
+            arr[i]=prompt("nhap phan tu thu "+i);
+        }
+        let dao=arr.reverse();
+        let xuatDao=dao.join();
+        document.writeln(xuatDao);
+    </script>
+</body>
+</html>

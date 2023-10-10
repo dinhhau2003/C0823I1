@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        // let n = parseInt(prompt("Nhập số phần tử"));
+        // let arr = [];
+        // for (let i = 0; i < n; i++) {
+        //     arr[i] = parseInt(prompt("Phan tu thu " + i));
+        // }
+        // // let flag = false;
+        // let inputNumber = parseInt( prompt("Nhập số cần kiểm tra :") );
+        // for (let i = 0; i < arr.length; i++) {
+        //     if (inputNumber === arr[i]) {
+        //         flag = true;
+        //         break;
+        //     }
+        // }
+        // if(flag === true){
+        //     alert(inputNumber +" is in the array");
+        // }
+        // else{
+        //     alert(inputNumber +" is not in the array");
+        //
+        // }
+        let x=parseInt(prompt("nhap so phan tu: "));
+        let arr=[];
+        for (let i=0;i<x;i++){
+            arr[i]=parseInt(prompt("nhap so phan tu thu "+i))
+        }
+        let inputNumber = parseInt( prompt("Nhập số cần kiểm tra :") );
+        if (arr.includes(inputNumber)){
+            document.writeln("V is in the array");
+        }else {
+            document.writeln("V not is in the array")
+        }
+    </script>
+</body>
+</html>

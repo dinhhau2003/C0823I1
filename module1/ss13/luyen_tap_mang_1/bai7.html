@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let n=parseInt(prompt("nhap so phan tu cua mang: "));
+        let arr=[];
+        for (let i=0;i<n;i++){
+            arr[i]=parseInt(prompt("nhap phan tu thu "+i));
+        }
+        let inputNumber = parseInt( prompt("Nhập V cần kiểm tra :") );
+        let index=arr.indexOf(inputNumber);
+        if (index!==-1){
+            for (let i=index;i<arr.length-1;i++){
+                arr[i]=arr[i+1];
+            }
+            arr[arr.length-1]=0;
+            document.writeln("mảng sau khi xóa V: "+arr);
+        }else {
+            document.writeln("V không thuộc mảng")
+        }
+        // Khởi tạo mảng gồm 10 phần tử
+        // var arr = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+        //
+        // // Nhập giá trị V từ người dùng
+        // var V = parseInt(prompt("Nhập giá trị V:"));
+        //
+        // // Tìm vị trí của V trong mảng
+        // var index = arr.indexOf(V);
+        //
+        // // Kiểm tra xem V có trong mảng không
+        // if (index !== -1) {
+        //     // Dịch các phần tử bên phải V sang trái để ghi đè V
+        //     for (var i = index; i < arr.length - 1; i++) {
+        //         arr[i] = arr[i + 1];
+        //     }
+        //
+        //     // Gán 0 cho phần tử cuối cùng của mảng
+        //     arr[arr.length - 1] = 0;
+        //
+        //     // In mảng sau khi xoá V
+        //     console.log("Mảng sau khi xoá V:", arr);
+        // } else {
+        //     console.log("V không thuộc mảng.");
+        // }
+        //
+
+
+
+
+
+    </script>
+</body>
+</html>

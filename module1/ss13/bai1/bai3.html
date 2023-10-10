@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+    const str=window.prompt();
+    let result=str.split("");
+    console.log(result);
+    for (let i = 0; i <result.length ; i++) {
+      if (result[i]=== result[i].toLowerCase()){
+        result[i]=result[i].toUpperCase();
+      }else {
+        result[i]=result[i].toLowerCase();
+      }
+    }document.writeln(result.join(""));
+  </script>
+</body>
+</html>

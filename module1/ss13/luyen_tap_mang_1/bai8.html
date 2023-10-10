@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n=parseInt(prompt("nhap so phan tu cua mang: "));
+    let arr=[];
+    for (let i=0;i<n;i++){
+        arr[i]=parseInt(prompt("nhap phan tu thu "+i));
+    }
+    arr.sort((a, b) => b-a);
+    document.writeln(arr);
+</script>
+</body>
+</html>
