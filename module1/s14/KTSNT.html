@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let number=parseInt(prompt("nhap so can check: "));
+        isPrime(number);
+        function isPrime(number) {
+            if (number <= 1) {
+                return false
+            }
+            for (let i = 2; i < number; i++) {
+                if (number % i === 0) {
+                    return false
+
+                }
+            }
+            return true
+        }
+        if(isPrime(number)){
+            document.writeln(number+" la so nguyen to ")
+        }else {
+            document.writeln(number+" khong phai la so nguyen to ")
+        }
+
+        // for (let i = 0; i < 10000; i++) {
+        //     if (isPrime(i)) {
+        //         document.writeln(`${i} la so nguyen to`)
+        //     }
+        // }
+    </script>
+</body>
+</html>

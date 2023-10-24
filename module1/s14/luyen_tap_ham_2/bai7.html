@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function doiChoHaiSoNguyen(a, b) {
+            let temp = a;
+            a = b;
+            b = temp;
+            return [a, b];
+        }
+        let so1 = 5;
+        let so2 = 10;
+        let ketQua = doiChoHaiSoNguyen(so1, so2);
+
+        so1 = ketQua[0];
+        so2 = ketQua[1];
+
+        document.writeln("Sau khi đổi chỗ: so1 = " + so1 + ", so2 = " + so2);
+    </script>
+</body>
+</html>

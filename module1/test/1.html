@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let str=parseInt(prompt("nhap so luong phan tu cua mang: "));
+        let arr=[];
+        let count=0;
+        for (let i=0;i<str;i++){
+            let input=parseInt(prompt("nhap phan tu thu: "+i));
+            if (!isNaN(input)){
+                if (arr.includes(input)){
+                    alert("so nay da ton tai trong mang vui long nhap lai: ");
+                    i--;
+                }else {
+                    arr.push(input);
+                }
+            }
+        }
+        let maxx=arr[0];
+        let index=0;
+        for (let i=0;i<arr.length;i++){
+            if (arr[i]>=maxx){
+                maxx=arr[i];
+
+            }
+            index+=arr[i];
+
+        }
+        let tbc=index/arr.length;
+        document.writeln("max la : "+maxx+"<br> gia tri trung binh cua mang "+tb);
+        // document.writeln("co "+count+" so lon hon 10 la: ");
+        let numbers=[3,7,2,9,1,8,4,6,5];
+        let max=numbers[0];
+        let sum=0;
+        for (let i=0;i<numbers.length;i++){
+            if (numbers[i]>max){
+                max=numbers[i];
+
+            }
+            sum=sum+numbers[i];
+        }
+        let tb=sum/numbers.length;
+        document.writeln("max la: "+max);
+        document.writeln("tb cac phan tu trong mang la: "+tb);
+    </script>
+</body>
+</html>

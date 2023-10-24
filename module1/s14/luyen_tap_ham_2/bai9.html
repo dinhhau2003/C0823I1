@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function kiemTraKyTuTrongMang(mangKyTu,kyTu){
+            let dem=0;
+            for (let i=0;i<mangKyTu.length;i++){
+                if (mangKyTu[i]===kyTu){
+                    dem++;
+                }
+            }
+            return dem>0? dem : -1;
+        }
+        let mangKyTu=[];
+        let x=prompt("nhap so luong ky tu trong mang: ");
+        for (let i=0;i<x;i++){
+            mangKyTu[i]=prompt("nhap ky tu thu "+i);
+        }
+        let kyTu=prompt("nhap ky tu can kiem tra: ");
+        let result=kiemTraKyTuTrongMang(mangKyTu,kyTu);
+        if (result===-1){
+            document.writeln("ky tu "+kyTu+" khong nam trong mang");
+        }else {
+            document.writeln("ky tu "+kyTu+" xuat hien "+result+" trong mang");
+        }
+    </script>
+</body>
+</html>

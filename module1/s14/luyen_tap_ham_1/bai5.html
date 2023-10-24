@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+      var stars = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+      var constellations = ["Ursa Minor", "Taurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+      function checkStart(star){
+          for (let i=0;i<star.length;i++){
+              if (stars[i]===star){
+                  return constellations[i];
+              }
+          }return "khong tim thay ngoi sao";
+      }
+      let star=prompt("nhap ten ngoi sao: ");
+      let output=checkStart(star);
+      document.writeln(output);
+  </script>
+</body>
+</html>
