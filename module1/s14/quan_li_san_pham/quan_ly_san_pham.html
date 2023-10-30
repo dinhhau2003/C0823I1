@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <STYLE>
+        .productTable{
+            width: 100%;
+            /*border-collapse: collapse;*/
+        }
+        .btn{
+            background-color: #1b7a0a;
+            color: #fff;
+            border: 2px solid #2980b9;
+            padding: 5px 10px;
+            border-radius: 2px;
+            width: 50px;
+            height: 25px;
+
+        }
+        input{
+            width: 20%;
+            height: 15px;
+            padding: 5px ;
+        }
+    </STYLE>
+</head>
+<body>
+    <h1>Add New Product</h1>
+    <div>
+        <input type="text" placeholder="New Product" id="productName">
+        <button class="btn" type="button" onclick="addProduct()" >ADD</button>
+    </div>
+    <h1>Display ALL Product</h1>
+    <h3>Product Name</h3>
+    <table class="productTable" >
+        <thead>
+        <tr>
+            <th></th>
+
+            <th></th>
+        </tr>
+        </thead>
+
+        <tbody id="productList"></tbody>
+    </table>
+<script src="index.js"></script>
+</body>
+</html>

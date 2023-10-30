@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<canvas id="myCanvas" style="border: 1px white solid" width="200" height="100" ></canvas>
+<br>
+    <script>
+        class Rectangle{
+            constructor(length,width) {
+                this.length=length;
+                this.width=width;
+            }
+            CV(){
+                document.writeln("chu vi hinh chu nhat la : "+(this.length+this.width)*2+"<br>");
+            }
+            S(){
+                document.writeln("dien tich hinh chu nhat la: "+this.length*this.width);
+            }
+        }
+        let a=parseInt(prompt("nhap chieu dai hinh chu nhat: "));
+        document.writeln("chieu dai hinh chu nhat la:"+a+"<br>");
+        let b=parseInt(prompt("nhap chieu rong hinh chu nhat: "));
+        document.writeln("chieu rong hinh chu nhat la: "+b+"<br>");
+        let result=new Rectangle(a,b);
+        result.CV();
+        result.S();
+        let canvas = document.getElementById("myCanvas");
+        let ctx = canvas.getContext("2d");
+        ctx.fillStyle = "red";
+        ctx.fillRect(50,35,result.length,result.width);
+        /*****************************************************/
+        // class Rectangle{
+        //     constructor(height,width) {
+        //         this.height=height;
+        //         this.width=width;
+        //     }
+        //     getWidth(){
+        //         return this.width;
+        //     }
+        //     getHeight(){
+        //         return this.height;
+        //     }
+        //     setWidth(width){
+        //         this.width=width;
+        //     }
+        //     setHeight(height){
+        //         this.height=height;
+        //     }
+        //     getArea(){
+        //         return this.width*this.height;
+        //     }
+        //     getPerimeter(){
+        //         return (this.width+this.height)*2;
+        //     }
+        // }
+        // let result=new Rectangle(10,20);
+        // let width=result.getWidth();
+        // let height=result.getHeight();
+        // result.setHeight(50);
+        // result.setWidth(30);
+        // document.writeln("chieu dai hinh chu nhat la: "+result.getWidth()+"<br>");
+        // document.writeln("chieu rong hinh chu nhat la: "+result.getHeight()+"<br>");
+        // document.writeln("dien tich hinh chu nhat la: "+result.getArea()+"<br>");
+        // document.writeln(" chu vi hinh chu nhat la: "+result.getPerimeter());
+        // let canvas = document.getElementById("myCanvas");
+        // let ctx = canvas.getContext("2d");
+        // ctx.fillStyle = "red";
+        // ctx.fillRect(50,35,result.height,result.width);
+
+
+    </script>
+</body>
+</html>

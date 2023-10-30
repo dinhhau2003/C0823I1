@@ -5,29 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="662a9d3b-21c8-4f33-be18-e8784365b348" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/s14/KTSNT.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/s14/feet_meters.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/s14/kt_snt.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/s14/luyen_tap_ham_1/bai1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/s14/luyen_tap_ham_1/bai2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/s14/luyen_tap_ham_1/bai3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/s14/luyen_tap_ham_1/bai4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/s14/luyen_tap_ham_1/bai5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/s14/luyen_tap_ham_2/bai1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/s14/luyen_tap_ham_2/bai2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/s14/luyen_tap_ham_2/bai3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/s14/luyen_tap_ham_2/bai4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/s14/luyen_tap_ham_2/bai5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/s14/luyen_tap_ham_2/bai6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/s14/luyen_tap_ham_2/bai7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/s14/luyen_tap_ham_2/bai8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/s14/luyen_tap_ham_2/bai9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/s14/min_cua_mang.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/s14/th_chuyen_doi_nhiet_do.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/s14/th_tao_va_goi_ham.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/testt.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s14/quan_li_san_pham/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s14/quan_li_san_pham/index1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s14/quan_li_san_pham/quan_ly_san_pham.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss16/Temperature.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss16/mo_ta_hcn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss16/mobile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss16/xay_dung_lop_date.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/1.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/1.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +23,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -69,6 +56,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Codegym\C0823I1\module1\s14\quan_li_san_pham" />
       <recent name="E:\Codegym\C0823I1\module1\ss13\bai1" />
       <recent name="E:\Codegym\C0823I1\module1\ss7\bien_kieudl_toantu" />
       <recent name="E:\Codegym\C0823I1\module1\ss4\taocv" />
@@ -98,6 +86,7 @@
       <workItem from="1697201017178" duration="5303000" />
       <workItem from="1697633341776" duration="5737000" />
       <workItem from="1698058058389" duration="13224000" />
+      <workItem from="1698232622765" duration="20110000" />
     </task>
     <servers />
   </component>
