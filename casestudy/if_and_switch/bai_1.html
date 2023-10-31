@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let luongNV = parseInt(prompt("Nhập lương nhân viên: "));
+        let thueTN = 0;
+
+        if (luongNV === 15000) {
+            thueTN = luongNV * 0.2;
+        } else if (luongNV >= 7000 && luongNV < 15000) {
+            thueTN = luongNV * 0.1;
+        } else if (luongNV < 7000) {
+            thueTN = luongNV * 0.05;
+        }
+
+        let luongRong = luongNV - thueTN;
+        document.writeln("Lương của nhân viên: " + luongNV + "<br>");
+        document.writeln("Thuế thu nhập: " + thueTN + "<br>");
+        document.writeln("Lương ròng của nhân viên: " + luongRong);
+    </script>
+</body>
+</html>

@@ -6,27 +6,24 @@
 </head>
 <body>
 <script>
-   function kiemTraKyTuTrongMang(mangKyTu,kyTu){
-       let dem=0;
-       for (let i=0;i<mangKyTu.length;i++){
-           if (mangKyTu[i]===kyTu){
-               dem++;
-           }
+   let input=parseInt(prompt("nhap so luong phan tu cua mang: "));
+   let array=[];
+   for (let i=0;i<input;i++){
+       array[i]=parseInt(prompt("nhap so phan tu thu "+i))
+   }
+   document.write("Mảng a bao gồm: " + array);
+   document.write("<br>");
+   let tong=0;
+   let count=0;
+   let tb=0;
+   for (let j=0;j<array.length;j++){
+       if (j%2===0 && [j]%2!==0){
+           tong+=j;
+           count++;
+           tb=tong/count;
        }
-       return dem>0? dem : -1;
    }
-    let mangKyTu=[];
-   let x=prompt("nhap so luong ky tu trong mang: ");
-   for (let i=0;i<x;i++){
-       mangKyTu[i]=prompt("nhap ky tu thu "+i);
-   }
-   let kyTu=prompt("nhap ky tu can kiem tra: ");
-   let result=kiemTraKyTuTrongMang(mangKyTu,kyTu);
-   if (result===-1){
-       document.writeln("ky tu "+kyTu+" khong nam trong mang");
-   }else {
-       document.writeln("ky tu "+kyTu+" xuat hien "+result+" trong mang");
-   }
+   document.writeln("trung binh cong cac so le o vi tri chan la: "+tb);
 </script>
 </body>
 </html>
