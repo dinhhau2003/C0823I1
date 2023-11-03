@@ -7,94 +7,47 @@
 <body>
 <p id="display"></p>
 <script>
-    class QuanLiSach{
-        constructor(maSo, tenSach, namXuatBan, soQuyen, tinhTrang) {
-            this.maSo = maSo;
-            this.tenSach = tenSach;
-            this.namXuatBan = namXuatBan;
-            this.soQuyen = soQuyen;
-            this.tinhTrang = tinhTrang;
-        }
-        getMaSoSach(){
-            return this.maSo;
-        }
-        getTenSach(){
-            return this.tenSach;
-        }
-        getNamXuatBan(){
-            return this.namXuatBan;
-        }
-        getSoQuyen(){
-            return this.soQuyen;
-        }
-        getTinhTrang(){
-            return this.tinhTrang;
-        }
+    var hero = new Hero('anh-anh-da-den-cuoi_035824967.jpg');
+    const hero = {
+        x: 0, // Tọa độ x
+        y: 0, // Tọa độ y
+        speed: 20, // Tốc độ mặc định
+    };
+
+    // Hàm để di chuyển nhân vật lên trên
+    function moveUp() {
+        hero.y -= hero.speed;
     }
 
-    let khacHangA = new QuanLiSach('001', 'Toán', 2002,2,true);
-    let khacHangB = new QuanLiSach('002', 'Tiếng Việt', 2001,6,false);
-    let arr = [khacHangA, khacHangB];
-
-    function display() {
-        str = '<table border="1px">\n' +
-            '<tr>\n' +
-            '<th>MaSo</th>\n' +
-            '<th>TenSach</th>\n' +
-            '<th>NamXuatBan</th>\n' +
-            '<th>SoQuyen</th>\n' +
-            '<th>TinhTrang</th>\n' +
-            '</tr>\n';
-        for (let i = 0; i < arr.length; i++) {
-            str +=
-                '<tr>\n' +
-                '<td>' + arr[i].getMaSoSach() + '</td>\n' +
-                '<td>' + arr[i].getTenSach() + '</td>\n' +
-                '<td>' + arr[i].getNamXuatBan() + '</td>\n' +
-                '<td>' + arr[i].getSoQuyen() + '</td>\n' +
-                '<td>' + arr[i].getTinhTrang()+ '</td>\n' +
-                '<td>' +
-                '<button onclick="edit(' + i + ' )">Edit</button>' +
-                '<button onclick="remove(' + i + ' )">Remove</button>' +
-                '<button onclick="add(' + i + ' )">Add</button>' +
-                '</td>\n' +
-                '</tr>\n'
-        }
-        str += '</table>'
-        document.getElementById('display').innerHTML = str;
+    // Hàm để di chuyển nhân vật xuống dưới
+    function moveDown() {
+        hero.y += hero.speed;
     }
 
-    display();
-
-    function edit(value) {
-        // alert(value);
-        let maSo = prompt('Nhập mã số');
-        let tenSach = prompt('Nhập tên sách');
-        let namXuatBan = prompt('Nhập năm xuất bản');
-        let soQuyen = prompt('Nhập số quyển');
-        let tinhTrang = prompt("Tình trạng");
-        let newSach = new QuanLiSach(maSo, tenSach, namXuatBan, soQuyen, tinhTrang)
-        arr[value] = newSach;
-        display();
+    // Hàm để di chuyển nhân vật sang trái
+    function moveLeft() {
+        hero.x -= hero.speed;
     }
 
-    function remove(value) {
-        if (confirm('Bạn có muốn xóa nó không')) {
-            arr.splice(value, 1);
-        }
-        display();
+    // Hàm để di chuyển nhân vật sang phải
+    function moveRight() {
+        hero.x += hero.speed;
     }
-    function add(value) {
-        alert(value);
-        let maSo = prompt('Nhập mã số');
-        let tenSach = prompt('Nhập tên sách');
-        let namXuatBan = prompt('Nhập năm xuất bản');
-        let soQuyen = prompt('Nhập số quyển');
-        let tinhTrang = prompt("Tình trạng");
-        let newSach = new QuanLiSach(maSo, tenSach, namXuatBan, soQuyen, tinhTrang)
-        arr.push(newSach);
-        display();
+
+    // Một hàm để in ra tọa độ hiện tại của nhân vật
+    function printHeroPosition() {
+        console.log(`Hero's position: x=${hero.x}, y=${hero.y}`);
     }
+
+    // Di chuyển nhân vật và in ra tọa độ
+    moveRight();
+    printHeroPosition();
+    moveDown();
+    printHeroPosition();
+    moveLeft();
+    printHeroPosition();
+    moveUp();
+    printHeroPosition();
 </script>
 </body>
 </html>

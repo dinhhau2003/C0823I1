@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+
+        function prefixSums(a){
+
+            // const n=a.length;
+            const b=new Array(a.length);
+            let sum=0;
+            for (let i=0;i<a.length;i++){
+                sum+=a[i];
+                b[i]=sum;
+            }
+            return b;
+        }
+        // let a=[1,2,3];
+        let x=parseInt(prompt("nhap so luong phan tu cua mang: "));
+        let a=[];
+        for (let i=0;i<x;i++){
+            a[i]=parseInt(prompt("nhap so phan tu thu "+i))
+        }
+        document.writeln("mang a ban dau la: "+a+"<br>")
+        let result=prefixSums(a);
+        document.writeln("mang b la: "+result);
+        // function prefixSums(a){
+        //     let b=new Array(a.length);
+        //     b[0]=a[0];
+        //     for (let i=1;i<a.length;i++){
+        //         b[i]=b[i-1]+a[i];
+        //     }
+        //     return b;
+        // }
+        // let a=[1,2,3];
+        // let result=prefixSums(a);
+        // document.writeln("mang b la: "+result);
+    </script>
+</body>
+</html>
