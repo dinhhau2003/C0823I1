@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function missingValue(A,B){
+            let result=[];
+            let setA=new Set(A);
+           for (let value of B){
+                if (!setA.has(value) && !result.includes(value)){
+                    result.push(value);
+                }
+           }
+           return result;
+        }
+        let A=[7,2,5,3,5,3];
+        let B=[7,2,5,4,6,3,5,3];
+        let result=missingValue(A,B);
+        document.writeln("missingValue(A,B)= ["+ result+"]");
+    </script>
+</body>
+</html>
