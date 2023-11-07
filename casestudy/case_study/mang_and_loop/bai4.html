@@ -6,30 +6,6 @@
 </head>
 <body>
     <script>
-        //     let menu = {
-        //     1: {name: 'cafe', price: 20000},
-        //     2: {name: 'cam vắt', price: 30000},
-        //     3: {name: 'nước ép cà rốt', price: 25000},
-        //     4: {name: 'nước ép cà chua', price: 25000},
-        //     5:{name: 'nươc lọc', price: 10000},
-        //     6: {name: 'nước dừa', price: 35000},
-        //     7: {name: 'thoát gọi món', price: 0}
-        // };
-        // let total = 0;
-        // let choice;
-        //     document.writeln('Menu:'+"<br>");
-        //     for (let value in menu) {
-        //         document.writeln(value + '. ' + menu[value].name+"-$  "+menu[value].price+"<br>");
-        //     }
-        // do {
-        //     choice = Number(prompt('Nhập lựa chọn của bạn:'));
-        //     if (choice !== 7) {
-        //         let quantity = Number(prompt('Nhập số lượng:'));
-        //         total += menu[choice].price * quantity;
-        //     }
-        // } while (choice !== 7);
-        //
-        // document.writeln('Tổng số tiền bạn cần phải trả là: ' + total);
         let menu={
             1:{name:"cam vắt", price:10000},
             2:{name:"sting", price:20000},
@@ -37,7 +13,7 @@
             4:{name:"trà nhài", price:40000},
             5:{name:"cafe", price:50000},
             6:{name:"nước ép", price:60000},
-            7:{name:"chanh dây", price:0},
+            7:{name:"bấm số 7 để thoát oder",price:0},
         };
         let total=0;
         let choice;
@@ -46,16 +22,15 @@
             document.writeln(i +"."+menu[i].name+" - giá: $"+menu[i].price+"<br>")
         }
         do {
-            choice=parseInt(prompt("nhap lua chon cua ban: "));
+            choice=parseInt(prompt("nhap lua chon cua bạn ( 1 (cafe), 2 (cam vắt), 3(nước ép cà rốt), 4(nước ép cà chua), 5(nước lọc), 6(nước dừa), 7(thoát gọi món): "));
             let selectDrink=menu[choice];
             if (choice!==7){
                 let money=parseInt(prompt("nhap so luong: "));
                 total+=menu[choice].price*money;
-                document.writeln(`bạn đã đặt ${money} ${selectDrink.name} với tổng bill phải trả là: ${total}`);
+                document.writeln("Danh sách mà bạn đã oder: ");
+                document.writeln(`Bạn đã đặt ${money} ${selectDrink.name} với tổng bill phải trả là: ${total}`);
             }
         }while (choice!==7);
-
-        // document.writeln("tổng số tiền cần phải trả là: "+total);
 
     </script>
 </body>
