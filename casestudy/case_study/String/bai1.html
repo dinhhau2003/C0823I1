@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function chuanHoaXauKyTu(xau){
+            xau=xau.trim().replace(/\s+/g, ' ').toLowerCase();
+            let tu=xau.split(" ");
+            for (let i=0;i<tu.length;i++){
+                tu[i] = tu[i][0].toUpperCase() + tu[i].slice(1);
+            }
+            return tu.join(' ');
+        }
+        let xau = "tRuong    TaN   HAI";
+        document.writeln(chuanHoaXauKyTu(xau));
+    </script>
+</body>
+</html>
