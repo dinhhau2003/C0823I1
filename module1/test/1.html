@@ -2,52 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title> Tính tổng</title>
 </head>
 <body>
-<p id="display"></p>
 <script>
-    var hero = new Hero('anh-anh-da-den-cuoi_035824967.jpg');
-    const hero = {
-        x: 0, // Tọa độ x
-        y: 0, // Tọa độ y
-        speed: 20, // Tốc độ mặc định
-    };
-
-    // Hàm để di chuyển nhân vật lên trên
-    function moveUp() {
-        hero.y -= hero.speed;
+    function tinhTongChan(m, n) {
+        let matrix = [];
+        for (let i = 0; i < m; i++) {
+            let row = [];
+            for (let j = 0; j < n; j++) {
+                let num = parseInt(prompt(`Nhập giá trị cho phần tử matrix[${i}][${j}]:`));
+                row.push(num);
+            }
+            matrix.push(row);
+        }
+        let tongChan = 0;
+        for (let i = 0; i < m; i++) {
+            for (let j = 0; j < n; j++) {
+                if (matrix[i][j] % 2 === 0) {
+                    tongChan += matrix[i][j];
+                }
+            }
+        }
+        return tongChan;
     }
+    let m = parseInt(prompt("Nhập số hàng m:"));
+    let n = parseInt(prompt("Nhập số cột n:"));
+    let tong = tinhTongChan(m, n);
+    document.write("Tổng các số chẵn trong ma trận là:",tong);
 
-    // Hàm để di chuyển nhân vật xuống dưới
-    function moveDown() {
-        hero.y += hero.speed;
-    }
-
-    // Hàm để di chuyển nhân vật sang trái
-    function moveLeft() {
-        hero.x -= hero.speed;
-    }
-
-    // Hàm để di chuyển nhân vật sang phải
-    function moveRight() {
-        hero.x += hero.speed;
-    }
-
-    // Một hàm để in ra tọa độ hiện tại của nhân vật
-    function printHeroPosition() {
-        console.log(`Hero's position: x=${hero.x}, y=${hero.y}`);
-    }
-
-    // Di chuyển nhân vật và in ra tọa độ
-    moveRight();
-    printHeroPosition();
-    moveDown();
-    printHeroPosition();
-    moveLeft();
-    printHeroPosition();
-    moveUp();
-    printHeroPosition();
 </script>
 </body>
 </html>

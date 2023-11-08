@@ -3,35 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    <script>
-        let menu={
-            1:{name:"cam vắt", price:10000},
-            2:{name:"sting", price:20000},
-            3:{name:"nước lọc", price:30000},
-            4:{name:"trà nhài", price:40000},
-            5:{name:"cafe", price:50000},
-            6:{name:"nước ép", price:60000},
-            7:{name:"bấm số 7 để thoát oder",price:0},
-        };
-        let total=0;
-        let choice;
-        document.writeln("danh sách juice: "+"<br>")
-        for (let i in menu){
-            document.writeln(i +"."+menu[i].name+" - giá: $"+menu[i].price+"<br>")
-        }
-        do {
-            choice=parseInt(prompt("nhap lua chon cua bạn ( 1 (cafe), 2 (cam vắt), 3(nước ép cà rốt), 4(nước ép cà chua), 5(nước lọc), 6(nước dừa), 7(thoát gọi món): "));
-            let selectDrink=menu[choice];
-            if (choice!==7){
-                let money=parseInt(prompt("nhap so luong: "));
-                total+=menu[choice].price*money;
-                document.writeln("Danh sách mà bạn đã oder: ");
-                document.writeln(`Bạn đã đặt ${money} ${selectDrink.name} với tổng bill phải trả là: ${total}`);
-            }
-        }while (choice!==7);
 
+    <script>
+        function handleAddNewStudent() {
+            let menu = {
+                1: {name: "cam vắt", price: 10000},
+                2: {name: "sting", price: 20000},
+                3: {name: "nước lọc", price: 30000},
+                4: {name: "trà nhài", price: 40000},
+                5: {name: "cafe", price: 50000},
+                6: {name: "nước ép", price: 60000},
+                7: {name: "bấm số 7 để thoát oder", price: 0},
+            };
+            let total = 0;
+            let choice;
+            document.writeln("danh sách juice: " + "<br>")
+            for (let i in menu) {
+                document.writeln(i + "." + menu[i].name + " - giá: $" + menu[i].price + "<br>")
+            }
+            do {
+                choice = parseInt(prompt("nhap lua chon cua bạn ( 1 (cafe), 2 (cam vắt), 3(nước ép cà rốt), 4(nước ép cà chua), 5(nước lọc), 6(nước dừa), 7(thoát gọi món): "));
+                let selectDrink = menu[choice];
+                if (choice !== 7) {
+                    let money = parseInt(prompt("nhap so luong: "));
+                    total += menu[choice].price * money;
+                    document.writeln("Danh sách mà bạn đã oder: ");
+                    document.writeln(`Bạn đã đặt ${money} ${selectDrink.name} với tổng bill phải trả là: ${total}`);
+                }
+            } while (choice !== 7);
+        }
+        function menu(){
+            document.writeln(i + "." + menu[i].name + " - giá: $" + menu[i].price + "<br>")
+        }
     </script>
+    <button onclick="handleAddNewStudent()" class="btn btn-outline-primary">
+        ODER TẠI ĐÂY
+    </button>
 </body>
 </html>

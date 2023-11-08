@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function commonCharacterCount(s1, s2) {
+            var count = 0;
+            s1 = s1.split('');
+            s2 = s2.split('');
+            s1.forEach(function(s){
+                if (s2.includes(s)) {
+                    count++;
+                    s2.splice(s2.indexOf(s), 1);
+                }
+            });
+            return count;
+        }
+
+        var s1 = "aabcc";
+        var s2 = "adcaa";
+        document.writeln(commonCharacterCount(s1, s2));
+    </script>
+</body>
+</html>

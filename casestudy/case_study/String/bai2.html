@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function demKyTu(string){
+            let count= new Set();
+            for (let i=0;i<string.length;i++){
+                count.add(string[i]);
+            }
+            return count.size;
+        }
+        let string="cabca";
+        let result=demKyTu(string);
+        document.writeln("so ky tu trong chuoi la: "+result)
+    </script>
+</body>
+</html>
