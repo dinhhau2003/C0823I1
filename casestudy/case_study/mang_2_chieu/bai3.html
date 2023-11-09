@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function timMaxMin(array){
+            let max=array[0][0];
+            let min=array[0][0];
+            for (let i=0;i<array.length;i++){
+                for (let j=0;j<array[i].length;j++){
+                    if (array[i][j]>max){
+                        max=array[i][j];
+                    }
+                    if (array[i][j]<min){
+                        min =array[i][j];
+                    }
+                }
+            }
+            return {min: min, max: max};
+        }
+        const array = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+        let maxMin=timMaxMin(array);
+        document.write("max la :", maxMin.max);
+        document.write("<br>");
+        document.write("min la :",maxMin.min);
+    </script>
+</body>
+</html>

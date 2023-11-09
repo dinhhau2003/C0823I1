@@ -2,35 +2,99 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title> Tính tổng</title>
+    <title>Title</title>
 </head>
 <body>
+<p id="display"></p>
 <script>
-    function tinhTongChan(m, n) {
-        let matrix = [];
-        for (let i = 0; i < m; i++) {
-            let row = [];
-            for (let j = 0; j < n; j++) {
-                let num = parseInt(prompt(`Nhập giá trị cho phần tử matrix[${i}][${j}]:`));
-                row.push(num);
-            }
-            matrix.push(row);
+    class QuanLiSach{
+        constructor(maSo, tenSach, namXuatBan, soQuyen, tinhTrang) {
+            this.maSo = maSo;
+            this.tenSach = tenSach;
+            this.namXuatBan = namXuatBan;
+            this.soQuyen = soQuyen;
+            this.tinhTrang = tinhTrang;
         }
-        let tongChan = 0;
-        for (let i = 0; i < m; i++) {
-            for (let j = 0; j < n; j++) {
-                if (matrix[i][j] % 2 === 0) {
-                    tongChan += matrix[i][j];
-                }
-            }
+        getMaSoSach(){
+            return this.maSo;
         }
-        return tongChan;
+        getTenSach(){
+            return this.tenSach;
+        }
+        getNamXuatBan(){
+            return this.namXuatBan;
+        }
+        getSoQuyen(){
+            return this.soQuyen;
+        }
+        getTinhTrang(){
+            return this.tinhTrang;
+        }
     }
-    let m = parseInt(prompt("Nhập số hàng m:"));
-    let n = parseInt(prompt("Nhập số cột n:"));
-    let tong = tinhTongChan(m, n);
-    document.write("Tổng các số chẵn trong ma trận là:",tong);
 
+    let khacHangA = new QuanLiSach('001', 'Toán', 2002,2,true);
+    let khacHangB = new QuanLiSach('002', 'Tiếng Việt', 2001,6,false);
+    let arr = [khacHangA, khacHangB];
+
+    function display() {
+        str = '<table border="1px">\n' +
+            '<tr>\n' +
+            '<th>MaSo</th>\n' +
+            '<th>TenSach</th>\n' +
+            '<th>NamXuatBan</th>\n' +
+            '<th>SoQuyen</th>\n' +
+            '<th>TinhTrang</th>\n' +
+            '</tr>\n';
+        for (let i = 0; i < arr.length; i++) {
+            str +=
+                '<tr>\n' +
+                '<td>' + arr[i].getMaSoSach() + '</td>\n' +
+                '<td>' + arr[i].getTenSach() + '</td>\n' +
+                '<td>' + arr[i].getNamXuatBan() + '</td>\n' +
+                '<td>' + arr[i].getSoQuyen() + '</td>\n' +
+                '<td>' + arr[i].getTinhTrang()+ '</td>\n' +
+                '<td>' +
+                '<button onclick="edit(' + i + ' )">Edit</button>' +
+                '<button onclick="remove(' + i + ' )">Remove</button>' +
+                '<button onclick="add(' + i + ' )">Add</button>' +
+                '</td>\n' +
+                '</tr>\n'
+        }
+        str += '</table>'
+        document.getElementById('display').innerHTML = str;
+    }
+
+    display();
+
+    function edit(value) {
+        alert(value);
+        let maSo = prompt('Nhập mã số');
+        let tenSach = prompt('Nhập tên sách');
+        let namXuatBan = prompt('Nhập năm xuất bản');
+        let soQuyen = prompt('Nhập số quyển');
+        let tinhTrang = prompt("Tình trạng");
+        let newSach = new QuanLiSach(maSo, tenSach, namXuatBan, soQuyen, tinhTrang)
+        arr[value] = newSach;
+        display();
+    }
+
+    function remove(value) {
+        if (confirm('Bạn có muốn xóa nó không')) {
+            arr.splice(value, 1);
+        }
+        display();
+    }
+    function add(value) {
+        alert(value);
+        let maSo = prompt('Nhập mã số');
+        let tenSach = prompt('Nhập tên sách');
+        let namXuatBan = prompt('Nhập năm xuất bản');
+        let soQuyen = prompt('Nhập số quyển');
+        let tinhTrang = prompt("Tình trạng");
+        let newSach = new QuanLiSach(maSo, tenSach, namXuatBan, soQuyen, tinhTrang)
+        arr.push(newSach);
+        display();
+    }
 </script>
 </body>
 </html>
