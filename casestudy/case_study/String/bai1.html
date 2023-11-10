@@ -6,16 +6,55 @@
 </head>
 <body>
     <script>
-        function chuanHoaXauKyTu(xau){
-            xau=xau.trim().replace(/\s+/g, ' ').toLowerCase();
-            let tu=xau.split(" ");
-            for (let i=0;i<tu.length;i++){
-                tu[i] = tu[i][0].toUpperCase() + tu[i].slice(1);
-            }
-            return tu.join(' ');
+        function normalizeString(inputString) {
+            // Chia xâu thành các từ
+            let words = inputString.split(/\s+/);
+
+            // Loại bỏ dấu cách thừa và chuyển đổi các từ thành chữ cái in hoa đầu tiên, chữ cái còn lại in thường
+            let normalizedWords = words.map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase());
+
+            // Kết hợp các từ đã chuẩn hóa thành xâu mới
+            let normalizedString = normalizedWords.join(' ');
+
+            return normalizedString;
         }
-        let xau = "tRuong    TaN   HAI";
-        document.writeln(chuanHoaXauKyTu(xau));
+
+        function findLongestWord(inputString) {
+            // Chia xâu thành các từ
+            let words = inputString.split(/\s+/);
+
+            // Tìm từ dài nhất
+            let longestWord = '';
+            words.forEach(word => {
+                if (word.length > longestWord.length) {
+                    longestWord = word;
+                }
+            });
+
+            return longestWord;
+        }
+
+        function main() {
+            // Nhập xâu từ bàn phím
+            let inputString = prompt('Nhập xâu ký tự: ');
+
+            // In ra xâu trước khi chuẩn hóa
+            console.log('Xâu trước khi chuẩn hóa:', inputString);
+
+            // Chuẩn hóa xâu
+            let normalizedString = normalizeString(inputString);
+
+            // In ra xâu sau khi chuẩn hóa
+            console.log('Xâu sau khi chuẩn hóa:', normalizedString);
+
+            // Tìm và in ra từ dài nhất trong xâu
+            let longestWord = findLongestWord(normalizedString);
+            console.log('Từ dài nhất trong xâu:', longestWord);
+        }
+
+        // Gọi hàm main khi script được thực thi
+        main();
+
     </script>
 </body>
 </html>

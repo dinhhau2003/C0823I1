@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        width: 100%;
+        height: 100%;
+    }
+    .content{
+        width: 100%;
+        height: 60px;
+        border:1px solid black;
+        background-color: antiquewhite;
+    }
+    .content i{
+        font-size: 60px;
+        float: left;
+    }
+    .content .p{
+
+        text-align: center;
+        /*padding: 0px 600px;*/
+    }
+    .main{
+        width: 100%;
+        height: auto;
+
+    }
+    .main .left {
+        width: 30%;
+        height: 500px;
+        background-color: #2980b9;
+        text-align: center;
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Can giữa theo chiều ngang */
+    }
+
+    select {
+        font-size: 20px;
+        background-color: darkgray;
+        margin-bottom: 10px; /* Khoảng cách giữa các select */
+    }
+    .footer{
+        width: 100%;
+        height: 60px;
+        background-color: cadetblue;
+    }
+</style>
+<body>
+    <form>
+        <div class="container"></div>
+        <div class="content">
+            <i  class='bx bxl-google'></i>
+            <p class="p">Hệ thống quản lý bài tập Casestudy module 1</p>
+        </div>
+        <div class="main">
+            <div class="left">
+
+                <select class="one">
+                    <option>Bài tập 1</option>
+                </select> <br>
+                <select class="two">
+
+                    <option class="">Bài tập 2</option>
+                </select> <br>
+                <select>
+                    <option>Bài tập 3</option>
+                </select> <br>
+                <select>
+                    <option>Bài tập 4</option>
+                </select> <br>
+                <select>
+                    <option>Bài tập 5</option>
+                </select>
+            </div>
+            <div class="right">
+
+            </div>
+        </div>
+        <div class="footer">
+
+        </div>
+
+    </form>
+</body>
+</html>
