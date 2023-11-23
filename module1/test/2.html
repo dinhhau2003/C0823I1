@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arraya = [];
+    let arrayb = [];
+    for (let i = 1; i <=2; i++){
+        do {
+            var temp = prompt("Nhập vào tử số của phân số thứ "+ i)
+        } while (isNaN(temp) || temp === "");
+        arraya.push(temp);
+        do {
+            var temp1 = prompt("Nhập vào mẫu số của phân số thứ "+ i)
+        } while (isNaN(temp1) || temp1 === "");
+        arrayb.push(temp1);
+    }
+    // alert(arraya);
+    // alert(arrayb);
+    if (arraya[0]*arrayb[1] === arrayb[0]*arraya[1]){
+        alert("True");
+    } else
+        alert("False");
+</script>
+</html>

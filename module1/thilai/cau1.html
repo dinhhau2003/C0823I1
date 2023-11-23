@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+       function kiemTra(arr) {
+           for (let i = 0; i < arr.length - 1; i++) {
+               if (i % 2 === 0) {
+                   if (arr[i] <= arr[i + 1]) {
+                       return false;
+                   }
+               } else {
+                   if (arr[i] >= arr[i + 1]) {
+                       return false;
+                   }
+               }
+           } return true;
+       }
+       function main(){
+           let n;
+           do{
+              n=parseInt(prompt("nhap so phan tu cua mang(n<=50): "));
+
+           }while ( !isNaN(n) || n<=0||n>50);
+           let array=[];
+           for (let i=0;i<n;i++){
+               let number = parseInt(prompt(`Nhập phần tử thứ ${i + 1}:`));
+               array.push(number);
+           }
+           console.log("Mảng vừa nhập:", array);
+           console.log(kiemTra(array));
+       }
+       main();
+    </script>
+</body>
+</html>

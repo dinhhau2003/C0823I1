@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+    />
+    <title>Title</title>
+    <style>
+        th{
+            color: #2980b9;
+        }
+        td{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+<h1 style="text-align: center;color: red ">Danh Sách Bệnh Nhân</h1>
+<div id="root" class="container m-2"></div>
+<script>
+    class Student {
+        constructor(stt, ten, age,diaChi,phone) {
+            this.stt = stt;
+            this.ten = ten;
+            this.age = age;
+            this.diaChi=diaChi;
+            this.phone=phone;
+        }
+
+        getstt() {
+            return this.stt;
+        }
+
+        setstt(stt) {
+            this.stt = stt;
+        }
+
+        getten() {
+            return this.ten;
+        }
+
+        setten(ten) {
+            this.ten = ten;
+        }
+
+        getage() {
+            return this.age;
+        }
+
+        setage(age) {
+            this.age = age;
+        } getdiaChi() {
+            return this.diaChi;
+        }
+
+        setdiaChi(diaChi) {
+            this.diaChi = diaChi;
+        } getphone() {
+            return this.phone;
+        }
+
+        setphone(phone) {
+            this.phone = phone;
+        }
+        static compareNames(a, b) {
+            const nameA = a.getten().toUpperCase();
+            const nameB = b.getten().toUpperCase();
+
+            if (nameA < nameB) {
+                return -1;
+            }
+            if (nameA > nameB) {
+                return 1;
+            }
+            return 0;
+        }
+
+    }
+
+    let danhSachBN = [];
+
+    let name1 = new Student("1", "Nguyễn Lê Hoàng Oanh","20","Quảng Nam","0923434564");
+    let name2 = new Student("2", "Nguyễn Trần Cảnh","30","Quảng Nam","0943246324");
+    let name3 = new Student("3", "Hoàng Thanh Hùng","15","Quảng Nam","0123451235");
+    let name4 = new Student("4", "Trần Lệ Quyên","19","Quảng Nam","0923093748");
+
+    danhSachBN.push(name1);
+    danhSachBN.push(name2);
+    danhSachBN.push(name3);
+    danhSachBN.push(name4);
+    danhSachBN.sort(Student.compareNames);
+    function displayStudents() {
+        let danhSachData = `<table  class="table table-bordered">
+        <thead>
+          <tr style="background-color: aquamarine">
+            <th>STT</th>
+            <th>Họ và tên</th>
+            <th>Tuổi</th>
+            <th>Địa chỉ</th>
+            <th>số điện thoại</th>
+          </tr>
+        </thead>
+        <tbody>`;
+        for (let i = 0; i < danhSachBN.length; i++) {
+            const danhSach = danhSachBN[i];
+            danhSachData += `<tr>
+            <td>${danhSach.getstt()}</td>
+            <td>${danhSach.getten()}</td>
+            <td>${danhSach.getage()}</td>
+            <td>${danhSach.getdiaChi()}</td>
+            <td>${danhSach.getphone()}</td>
+
+
+          </tr>`;
+        }
+        danhSachData += `</tbody>
+    </table>`;
+
+        document.getElementById("root").innerHTML = danhSachData;
+    }
+
+    displayStudents();
+    //thêm mới
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function isLeapYear(year) {
+        return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+    }
+
+
+    const year = prompt("Nhập năm dương lịch:");
+    if (isLeapYear(year)){
+        document.writeln(`${year} la nam nhuan`);
+    }else {
+        document.writeln(`${year} khong phai la nam nhuan`);
+    }
+
+
+
+</script>
+</body>
+</html>

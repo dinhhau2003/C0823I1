@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function hienThiUocSo() {
+            let n;
+            do {
+                // Nhập số từ người dùng
+                n = prompt("Nhập vào một số nguyên dương:");
+
+                // Kiểm tra n là số nguyên dương hay không
+                if (isNaN(n) || n <= 0) {
+                    alert("Vui lòng nhập một số nguyên dương hợp lệ!");
+                }
+            } while (isNaN(n) || n <= 0);
+
+            // Chuyển đổi n sang kiểu số nguyên
+            n = parseInt(n);
+
+            // Hiển thị tất cả các ước của n
+            console.log(`Các ước của ${n}:`);
+            for (let i = 1; i <= n; i++) {
+                if (n % i === 0) {
+                    console.log(i);
+                }
+            }
+        }
+
+        // Gọi hàm để thực hiện chương trình
+        hienThiUocSo();
+
+
+    </script>
+</body>
+</html>

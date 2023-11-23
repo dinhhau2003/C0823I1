@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    do {
+        var so = prompt("Nhập vào số phần tử của mảng");
+    } while (isNaN(so) || so === "" || so > 50);
+    let arraya = [];
+    for (let i = 0; i < so; i++ ){
+        do {
+            var dem = prompt("Nhập vào phần tử của mảng "+i);
+        } while (isNaN(dem) || dem === "");
+        arraya.push(dem)
+    }
+    document.write("Mảng a bao gồm: " + arraya);
+    document.write("<br>");
+    let tong = 0;
+    count = 0;
+    let tbc = 0;
+    for(let j=0;j<arraya.length;j++){
+        if(j%2==0 && arraya[j]%2!=0){
+            tong +=j;
+            count++;
+            tbc = tong/count;
+        }
+    }
+    document.write("Trung bình cộng các số lẻ ở vị trí chẵn là: "+tbc);
+
+</script>
+</body>
+</html>

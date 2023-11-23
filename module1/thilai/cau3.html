@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+    />
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+    />
+    <title>Title</title>
+    <style>
+        th{
+            color: #2980b9;
+        }
+        td{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+<h1 style="text-align: center;color: red ">Danh Sách Xe Máy</h1>
+<div class="container m-2">
+    <button onclick="handleAddNewStudent() "class="btn btn-outline-warning">Thêm mới </button>
+    <button onclick="handleDeleteStudent() "class="btn btn-outline-primary" >Xóa </button>
+    <br>
+    <br>
+</div>
+<div id="root" class="container m-2"></div>
+<script>
+    class Xe {
+        constructor(bienSS, ten, cmnd,hangXeMay,phiGuiXe) {
+            this.bienSS = bienSS;
+            this.ten = ten;
+            this.cmnd = cmnd;
+            this.hangXeMay=hangXeMay;
+            this.phiGuiXe=phiGuiXe;
+        }
+
+        getbienSS() {
+            return this.bienSS;
+        }
+
+        setbienSS(bienSS) {
+            this.bienSS = bienSS;
+        }
+
+        getten() {
+            return this.ten;
+        }
+
+        setten(ten) {
+            this.ten = ten;
+        }
+
+        getcmnd() {
+            return this.cmnd;
+        }
+
+        setcmnd(cmnd) {
+            this.cmnd = cmnd;
+        } gethangXeMay() {
+            return this.hangXeMay;
+        }
+
+        sethangXeMay(hangXeMay) {
+            this.hangXeMay = hangXeMay;
+        } getphiGuiXe() {
+            return this.phiGuiXe;
+        }
+
+        setphiGuiXe(phiGuiXe) {
+            this.phiGuiXe = phiGuiXe;
+        }
+    }
+    let danhSach = [];
+
+    let xe1 = new Xe( "92-D1", "nguyen dinh hau","01233463","Honda","2000");
+    let xe2 = new Xe( "43-G2", "pham quoc huy","047347374","Yamaha","3000");
+    let xe3 = new Xe( "81-D", "dang thu trang","02348304","sym","40000");
+
+    danhSach.push(xe1);
+    danhSach.push(xe2);
+    danhSach.push(xe3);
+    function displayStudents() {
+        let studentData = `<table  class="table table-bordered">
+        <thead>
+          <tr style="background-color: aquamarine">
+            <th>Biển số xe</th>
+            <th>Họ và tên</th>
+            <th>Chứng minh nhân dân</th>
+            <th>Hãng xe máy</th>
+            <th>Phí gửi xe đã đóng</th>
+          </tr>
+        </thead>
+        <tbody>`;
+        for (let i = 0; i < danhSach.length; i++) {
+            const student = danhSach[i];
+            studentData += `<tr>
+            <td>${student.getbienSS()}</td>
+            <td>${student.getten()}</td>
+            <td>${student.getcmnd()}</td>
+            <td>${student.gethangXeMay()}</td>
+            <td>${student.getphiGuiXe()}</td>
+          </tr>`;
+        }
+        studentData += `</tbody>
+    </table>`;
+        document.getElementById("root").innerHTML = studentData;
+    }
+    displayStudents();
+    //thêm mới
+    function handleAddNewStudent() {
+        let bienSS = prompt('Nhập bien so xe: ');
+        let ten = prompt('Nhập họ tên : ');
+        let cmnd = prompt('Nhập cmnd:');
+        let hangXeMay = prompt('Nhập hãng xe máy: ');
+        let phiGuiXe = prompt("Nhập phí gửi xe: ");
+        let danhSachXe = new Xe(bienSS, ten, cmnd,hangXeMay,phiGuiXe);
+        console.log(danhSachXe);
+        danhSach.push(danhSachXe);
+        displayStudents();
+    }
+    //sửa thông tin
+
+    //xóa
+    function handleDeleteStudent() {
+        const bienSoXeCanXoa = prompt("Nhập bien so xe can xoa:");
+
+        // Tìm học viên có mã tương ứng trong danh sách
+        const bienSoXeToDelete = danhSach.find(danhSX => danhSX.getbienSS() === bienSoXeCanXoa);
+
+        if ( bienSoXeToDelete) {
+            let confirmDelete = confirm(
+                `Ban co muon xoa xe này khong?`
+            );
+            if (confirmDelete) {
+                let index = danhSach.indexOf( bienSoXeToDelete);
+                danhSach.splice(index, 1);
+                displayStudents();
+            }
+        }else {
+            alert("khong tim thay")
+        }
+    }
+</script>
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"
+></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

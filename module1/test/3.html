@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<div class="row">
+    <div class="col-sm-6"><button class="btn btn-success" onclick="submit()">Thêm</button></div>
+    <div class="col-sm-6"><input type="text" id="search"> <button class="btn btn-success" onclick="searchProduct()">Tìm kiếm</button></div>
+</div>
+<div id="menuProduct"></div>
+<script>
+    class STK {
+        constructor(ID,Type,Name,Card,Date,Money) {
+            this.ID = ID;
+            this.Type = Type;
+            this.Name = Name;
+            this.Card = Card;
+            this.Date = Date;
+            this.Money = Money;
+        }
+        getID(){
+            return this.ID;
+        }
+        getType(){
+            return this.Type;
+        }
+        getName(){
+            return this.Name;
+        }
+        getCard(){
+            return this.Card;
+        }
+        getDate(){
+            return this.Date;
+        }
+        getMoney(){
+            return this.Money;
+        }
+        setID(newID){
+            this.ID = newID;
+        }
+        setType(newType){
+            this.Type = newType;
+        }
+        setName(newName){
+            this.Name = newName;
+        }
+        setCard(newCard){
+            this.Card = newCard;
+        }
+        setDate(newDate){
+            this.Date = newDate;
+        }
+        setMoney(newMoney){
+            this.Money = newMoney;
+        }
+    }
+    let STK1 = new STK('01','Tháng','Trần Văn A','0123456','08/01/1997',10000000);
+    let STK2 = new STK('02','Tháng','Trần Văn B','0123457','08/01/1998',30000000);
+    let arr = [STK1,STK2];
+    function menuProduct(){
+        // Lấy giá trị có tại ô search
+        let keyword = document.getElementById("search").value;
+        // Lấy số thứ tự cho kết quả search
+        let count = 0;
+        str =
+            '<table>\n'+
+            '<tr>\n'+
+            '<th>Số thứ tự</th>\n'+
+            '<th>Mã sổ</th>\n'+
+            '<th>Loại Tiết Kiệm</th>\n'+
+            '<th>Họ và tên khách hàng</th>\n'+
+            '<th>Chứng Minh Nhân Dân</th>\n'+
+            '<th>Ngày mở sổ</th>\n'+
+            '<th>Số tiền gởi</th>\n'+
+            '<th>Sửa</th>\n'+
+            '<th>Xóa</th>\n'+
+            '</tr>\n'
+        for(var i = 0;i<arr.length;i++){
+            // Lọc nếu ô search để trống
+            if (keyword == "") {
+                str +=
+                    '<tr>\n'+
+                    // STT bắt đầu từ 1
+                    // '<td>'+i+'</td>\n'+
+                    '<td>'+(i+1)+'</td>\n'+
+                    '<td>'+arr[i].getID()+'</td>\n'+
+                    '<td>'+arr[i].getType()+'</td>\n'+
+                    '<td>'+arr[i].getName()+'</td>\n'+
+                    '<td>'+arr[i].getCard()+'</td>\n'+
+                    '<td>'+arr[i].getDate()+'</td>\n'+
+                    '<td>'+arr[i].getMoney()+'</td>\n'+
+                    '<td><button onclick="edit('+i+')">Sửa</button></td>\n'+
+                    '<td><button onclick="remove('+i+')">Xóa</button></td>\n'+
+                    '</tr>\n'
+            }
+            // Nếu ô search có giá trị, chỉ in ra các sản phẩm có tên sản phẩm chứa keyword (không tính chữ hoa chữ thường)
+            else {
+                if (arr[i].getID().toLowerCase().includes(keyword.toLowerCase())) {
+                    count++;
+                    str +=
+                        '<tr>\n'+
+                        '<td>'+count+'</td>\n'+
+                        '<td>'+arr[i].getID()+'</td>\n'+
+                        '<td>'+arr[i].getType()+'</td>\n'+
+                        '<td>'+arr[i].getName()+'</td>\n'+
+                        '<td>'+arr[i].getCard()+'</td>\n'+
+                        '<td>'+arr[i].getDate()+'</td>\n'+
+                        '<td>'+arr[i].getMoney()+'</td>\n'+
+                        '<td><button onclick="edit('+i+')">Sửa</button></td>\n'+
+                        '<td><button onclick="remove('+i+')">Xóa</button></td>\n'+
+                        '</tr>\n'
+                }
+            }
+
+        }
+        str += '</table>'
+        document.getElementById('menuProduct').innerHTML = str;
+    }
+    menuProduct();
+    function submit(){
+        let creatID = prompt("Nhập vào mã sổ");
+        let creatType = prompt("Nhập vào loại tiết kiệm");
+        let creatName = prompt("Nhập vào họ tên khách hàng");
+        let creatCard = prompt("Nhập vào chứng minh nhân dân");
+        let creatDate = prompt("Nhập vào ngày mở sổ");
+        let creatMoney = prompt("Nhập vào số tiền muốn gởi");
+
+        let newSTK = new STK(creatID,creatType,creatName,creatCard,creatDate,creatMoney);
+        arr.push(newSTK);
+        alert("Bạn đã thêm sổ mới thành công ");
+        menuProduct();
+    }
+    function edit(value){
+        // thêm arr[value].getXXX() để cho giá trị của ô prompt bằng với giá trị cũ
+        let newID = prompt('Nhập mã sổ :', arr[value].getID());
+        let newType = prompt('Nhập loại tiết kiệm :', arr[value].getType());
+        let newName = prompt('Nhập họ tên khách hàng :',arr[value].getName());
+        let newCard = prompt('Nhập chứng minh nhân dân :',arr[value].getCard());
+        let newDate = prompt('Nhập ngày mở sổ :',arr[value].getDate());
+        let newMoney = prompt('Nhập số tiền muốn gởi :',arr[value].getMoney());
+        arr[value].setID(newID);
+        arr[value].setType(newType);
+        arr[value].setName(newName);
+        arr[value].setCard(newCard);
+        arr[value].setDate(newDate);
+        arr[value].setMoney(newMoney);
+        menuProduct();
+    }
+    function remove(value){
+        if(confirm('Bạn muốn xóa sản phầm này')){
+            arr.splice(value,1);
+        }
+        menuProduct();
+    }
+    function searchProduct(){
+        menuProduct();
+    }
+</script>
+</body>
+</html>

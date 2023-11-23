@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function SoSanh(tu1,mau1,tu2,mau2) {
+        if(tu1*mau2 === tu2*mau1){
+            document.write("True");
+        }
+        else {
+            document.write("false");
+        }
+
+    }
+    let tu1 = parseInt(prompt("nhap tu 1"));
+    document.write(tu1+"/");
+    let mau1 = parseInt(prompt("nhap mau 1"));
+    document.write(mau1+",")
+    let tu2 = parseInt(prompt("nhap tu 2"));
+    document.write(tu2+"/");
+    let mau2 = parseInt(prompt("nhap mau 2"));
+    document.write(mau2);
+    document.write("<br>");
+    SoSanh(tu1,mau1,tu2,mau2);
+
+</script>
+</body>
+</html>
