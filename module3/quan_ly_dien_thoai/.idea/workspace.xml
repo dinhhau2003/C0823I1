@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="40ea324c-ece6-4b3c-8e79-8944afa15d34" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../bt6/dinhdangvanbanvoicss/1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bt6/dinhdangvanbanvoicss/2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bt6/nhungcssvaohtml/1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bt6/nhungcssvaohtml/1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo1/demo1/src/main/java/com/example/demo1/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demoJDBC/demoJDBC/src/main/java/com/example/demojdbc/Service/IUserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demoJDBC/demoJDBC/src/main/java/com/example/demojdbc/Service/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demoJDBC/demoJDBC/src/main/java/com/example/demojdbc/controller/UserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demoJDBC/demoJDBC/src/main/java/com/example/demojdbc/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demoJDBC/demoJDBC/src/main/webapp/view/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demoJDBC/demoJDBC/src/main/webapp/view/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quan_ly_dien_thoai/src/main/java/com/example/quan_ly_dien_thoai/controller/PhoneServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quan_ly_dien_thoai/src/main/java/com/example/quan_ly_dien_thoai/model/Phone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quan_ly_dien_thoai/src/main/java/com/example/quan_ly_dien_thoai/repository/DBConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quan_ly_dien_thoai/src/main/java/com/example/quan_ly_dien_thoai/repository/IPhoneRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quan_ly_dien_thoai/src/main/java/com/example/quan_ly_dien_thoai/repository/PhoneRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quan_ly_dien_thoai/src/main/java/com/example/quan_ly_dien_thoai/service/IPhoneService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quan_ly_dien_thoai/src/main/java/com/example/quan_ly_dien_thoai/service/PhoneServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quan_ly_dien_thoai/src/main/webapp/view/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quan_ly_dien_thoai/src/main/webapp/view/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quan_ly_khach_hang/quan_ly_khach_hang/src/main/java/com/example/quan_ly_khach_hang/CustomerServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quan_ly_khach_hang/quan_ly_khach_hang/src/main/java/com/example/quan_ly_khach_hang/controller/CustomerServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quan_ly_khach_hang/quan_ly_khach_hang/src/main/java/com/example/quan_ly_khach_hang/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quan_ly_khach_hang/quan_ly_khach_hang/src/main/java/com/example/quan_ly_khach_hang/repository/CusomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quan_ly_khach_hang/quan_ly_khach_hang/src/main/java/com/example/quan_ly_khach_hang/repository/ICustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quan_ly_khach_hang/quan_ly_khach_hang/src/main/java/com/example/quan_ly_khach_hang/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quan_ly_khach_hang/quan_ly_khach_hang/src/main/java/com/example/quan_ly_khach_hang/service/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quan_ly_khach_hang/quan_ly_khach_hang/src/main/webapp/view/customer/add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quan_ly_khach_hang/quan_ly_khach_hang/src/main/webapp/view/customer/delete.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quan_ly_khach_hang/quan_ly_khach_hang/src/main/webapp/view/customer/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quan_ly_khach_hang/quan_ly_khach_hang/src/main/webapp/view/layout/head.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quan_ly_khach_hang/quan_ly_khach_hang/src/main/webapp/view/layout/navbar.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quan_ly_khach_hang/quan_ly_khach_hang/src/main/webapp/view/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tu_dien_don_gian/tu_dien_don_gian/src/main/java/com/example/tu_dien_don_gian/TranslateServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ud_chuyen_doi_tien_te/ud_chuyen_doi_tien_te/src/main/java/com/example/ud_chuyen_doi_tien_te/ConverterServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ung_dung_may_tinh/ung_dung_may_tinh/src/main/java/model/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ung_dung_may_tinh/ung_dung_may_tinh/src/main/java/model/CalculatorServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ung_dung_quan_ly_khach_hang/ung_dung_quan_ly_khach_hang/src/main/java/com/example/ung_dung_quan_ly_khach_hang/controller/CustomerServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ung_dung_quan_ly_khach_hang/ung_dung_quan_ly_khach_hang/src/main/java/com/example/ung_dung_quan_ly_khach_hang/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ung_dung_quan_ly_khach_hang/ung_dung_quan_ly_khach_hang/src/main/java/com/example/ung_dung_quan_ly_khach_hang/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ung_dung_quan_ly_khach_hang/ung_dung_quan_ly_khach_hang/src/main/java/com/example/ung_dung_quan_ly_khach_hang/service/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ung_dung_quan_ly_khach_hang/ung_dung_quan_ly_khach_hang/src/main/webapp/customer/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ung_dung_quan_ly_khach_hang/ung_dung_quan_ly_khach_hang/src/main/webapp/customer/delete.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ung_dung_quan_ly_khach_hang/ung_dung_quan_ly_khach_hang/src/main/webapp/customer/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ung_dung_quan_ly_khach_hang/ung_dung_quan_ly_khach_hang/src/main/webapp/customer/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ung_dung_quan_ly_khach_hang/ung_dung_quan_ly_khach_hang/src/main/webapp/customer/view.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ung_dung_quan_ly_khach_hang/ung_dung_quan_ly_khach_hang/src/main/webapp/error-404.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2e7YJe7ASRiIqI4psq7mSh0g7Z8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "E:/Codegym/C0823I1/module3/quan_ly_dien_thoai/quan_ly_dien_thoai",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="40ea324c-ece6-4b3c-8e79-8944afa15d34" name="Changes" comment="" />
+      <created>1711257013121</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1711257013121</updated>
+      <workItem from="1711257015613" duration="25000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
