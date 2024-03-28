@@ -1,4 +1,3 @@
-
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
@@ -11,16 +10,15 @@
 <div class="container">
     <div class="row">
         <div class="col-sm">
-            <h1 style="text-align: center;">Chỉnh sửa product</h1>
+            <h1 style="text-align: center;">Thêm mới product</h1>
         </div>
         <form action="/product" method="post">
-            <input type="hidden" name="action" value="update">
-            <input type="hidden" name="id" value="${product.id}"/>
+            <input type="hidden" name="action" value="create">
             <div class="row">
                 <div class="col-sm">
                     <div class="form-group">
                         <label for="name">Ten product<span style="color: red">*</span></label>
-                        <input type="text" class="form-control" name="name" id="name" placeholder="Nhập ten product" value="${product.name}"/>
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Nhập ten product"/>
                     </div>
                 </div>
             </div>
@@ -28,7 +26,7 @@
                 <div class="col-sm">
                     <div class="form-group">
                         <label for="day">Day<span style="color: red">*</span></label>
-                        <input type="date" class="form-control" name="day" id="day" value="${product.day}"/>
+                        <input type="date" class="form-control" name="day" id="day"/>
                     </div>
                 </div>
             </div>
@@ -37,15 +35,9 @@
                     <div class="form-group">
                         <label for="category">Tên category</label>
                         <select id="category" class="form-control" name="idCategory">
-                            <c:forEach var="c" items="${categories}">
-                                <c:choose>
-                                    <c:when test="${c.idCategory == product.idCategory}">
-                                        <option value="${c.idCategory}" selected> ${c.nameCategory}</option>
-                                    </c:when>
-                                    <c:otherwise>
-                                        <option value="${c.idCategory}">${c.nameCategory}</option>
-                                    </c:otherwise>
-                                </c:choose>
+                            <option>Chọn category.....</option>
+                            <c:forEach items="${categories}" var="kh">
+                                <option value="${kh.idCategory}">${kh.nameCategory}</option>
                             </c:forEach>
                         </select>
                     </div>
@@ -53,7 +45,7 @@
             </div>
             <div class="row">
                 <div class="col-sm">
-                    <button type="submit" class="btn btn-primary">Chỉnh sửa</button>
+                    <button type="submit" class="btn btn-primary">Thêm mới</button>
                     <a type="button" class="btn btn-primary" href="/product?action=list">Quay lại</a>
                 </div>
             </div>
