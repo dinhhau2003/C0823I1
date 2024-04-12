@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="83946942-a36d-4f47-8aee-0f60cf491220" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/product/config/FilterUTF8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Thi/Thi/src/main/java/com/example/thi/config/FilterUTF8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Thi/Thi/src/main/java/com/example/thi/controller/ProductServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Thi/Thi/src/main/java/com/example/thi/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Thi/Thi/src/main/java/com/example/thi/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Thi/Thi/src/main/java/com/example/thi/repository/CategoryRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Thi/Thi/src/main/java/com/example/thi/repository/DBConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Thi/Thi/src/main/java/com/example/thi/repository/ICategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Thi/Thi/src/main/java/com/example/thi/repository/IProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Thi/Thi/src/main/java/com/example/thi/repository/ProductRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Thi/Thi/src/main/java/com/example/thi/service/CategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Thi/Thi/src/main/java/com/example/thi/service/ICategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Thi/Thi/src/main/java/com/example/thi/service/IProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Thi/Thi/src/main/java/com/example/thi/service/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Thi/Thi/src/main/webapp/header.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Thi/Thi/src/main/webapp/product/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Thi/Thi/src/main/webapp/product/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Thi/Thi/src/main/webapp/product/update.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Thi_dto/Thi_dto/src/main/java/com/example/thi_dto/controller/ProductServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Thi_dto/Thi_dto/src/main/java/com/example/thi_dto/dto/ProductDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Thi_dto/Thi_dto/src/main/java/com/example/thi_dto/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Thi_dto/Thi_dto/src/main/java/com/example/thi_dto/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Thi_dto/Thi_dto/src/main/java/com/example/thi_dto/repository/CategoryRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Thi_dto/Thi_dto/src/main/java/com/example/thi_dto/repository/DBConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Thi_dto/Thi_dto/src/main/java/com/example/thi_dto/repository/ICategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Thi_dto/Thi_dto/src/main/java/com/example/thi_dto/repository/IProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Thi_dto/Thi_dto/src/main/java/com/example/thi_dto/repository/ProductRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Thi_dto/Thi_dto/src/main/java/com/example/thi_dto/service/CategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Thi_dto/Thi_dto/src/main/java/com/example/thi_dto/service/ICategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Thi_dto/Thi_dto/src/main/java/com/example/thi_dto/service/IProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Thi_dto/Thi_dto/src/main/java/com/example/thi_dto/service/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Thi_dto/Thi_dto/src/main/webapp/header.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Thi_dto/Thi_dto/src/main/webapp/product/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Thi_dto/Thi_dto/src/main/webapp/product/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../benh_an/benh_an/src/main/java/com/example/benh_an/controller/BenhAnServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../benh_an/benh_an/src/main/java/com/example/benh_an/model/BenhAn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../benh_an/benh_an/src/main/java/com/example/benh_an/model/BenhNhan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../benh_an/benh_an/src/main/java/com/example/benh_an/repository/BenhAnRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../benh_an/benh_an/src/main/java/com/example/benh_an/repository/BenhNhanRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../benh_an/benh_an/src/main/java/com/example/benh_an/repository/DBConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../benh_an/benh_an/src/main/java/com/example/benh_an/repository/IBenhAnRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../benh_an/benh_an/src/main/java/com/example/benh_an/repository/IBenhNhanRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../benh_an/benh_an/src/main/java/com/example/benh_an/service/BenhAnService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../benh_an/benh_an/src/main/java/com/example/benh_an/service/BenhNhanService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../benh_an/benh_an/src/main/java/com/example/benh_an/service/IBenhAnService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../benh_an/benh_an/src/main/java/com/example/benh_an/service/IBenhNhanService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../benh_an/benh_an/src/main/webapp/benhAn/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../benh_an/benh_an/src/main/webapp/benhAn/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../benh_an/benh_an/src/main/webapp/benhAn/update.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../benh_an/benh_an/src/main/webapp/header.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bt6/dinhdangvanbanvoicss/1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demopro/demopro/src/main/java/com/example/demopro/config/FilterUTF8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demopro/demopro/src/main/java/com/example/demopro/controller/ProductServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demopro/demopro/src/main/java/com/example/demopro/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demopro/demopro/src/main/java/com/example/demopro/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demopro/demopro/src/main/java/com/example/demopro/repository/CategoryRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demopro/demopro/src/main/java/com/example/demopro/repository/DBConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demopro/demopro/src/main/java/com/example/demopro/repository/ICategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demopro/demopro/src/main/java/com/example/demopro/repository/IProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demopro/demopro/src/main/java/com/example/demopro/repository/ProductRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demopro/demopro/src/main/java/com/example/demopro/service/CategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demopro/demopro/src/main/java/com/example/demopro/service/ICategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demopro/demopro/src/main/java/com/example/demopro/service/IProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demopro/demopro/src/main/java/com/example/demopro/service/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demopro/demopro/src/main/webapp/header.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demopro/demopro/src/main/webapp/product/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demopro/demopro/src/main/webapp/product/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demopro/demopro/src/main/webapp/product/update.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hangHoa/hangHoa/src/main/java/com/example/hanghoa/controller/HangHoaServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hangHoa/hangHoa/src/main/java/com/example/hanghoa/model/HangHoa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hangHoa/hangHoa/src/main/java/com/example/hanghoa/model/LoaiHang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hangHoa/hangHoa/src/main/java/com/example/hanghoa/repository/DBConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hangHoa/hangHoa/src/main/java/com/example/hanghoa/repository/HangRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hangHoa/hangHoa/src/main/java/com/example/hanghoa/repository/IHangRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hangHoa/hangHoa/src/main/java/com/example/hanghoa/repository/ILoaiHangRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hangHoa/hangHoa/src/main/java/com/example/hanghoa/repository/LoaiHangRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hangHoa/hangHoa/src/main/java/com/example/hanghoa/service/HangService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hangHoa/hangHoa/src/main/java/com/example/hanghoa/service/IHangService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hangHoa/hangHoa/src/main/java/com/example/hanghoa/service/ILoaiHangService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hangHoa/hangHoa/src/main/java/com/example/hanghoa/service/LoaiHangService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hangHoa/hangHoa/src/main/webapp/hang/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hangHoa/hangHoa/src/main/webapp/hang/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hangHoa/hangHoa/src/main/webapp/hang/update.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hangHoa/hangHoa/src/main/webapp/header.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../khach_san/khach_san/src/main/java/com/example/khach_san/controller/KhachHangServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../khach_san/khach_san/src/main/java/com/example/khach_san/model/KhachHang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../khach_san/khach_san/src/main/java/com/example/khach_san/model/LoaiKhach.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../khach_san/khach_san/src/main/java/com/example/khach_san/repository/DBConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../khach_san/khach_san/src/main/java/com/example/khach_san/repository/IKhachRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../khach_san/khach_san/src/main/java/com/example/khach_san/repository/ILoaiKhachRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../khach_san/khach_san/src/main/java/com/example/khach_san/repository/KhachRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../khach_san/khach_san/src/main/java/com/example/khach_san/repository/LoaiKhachRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../khach_san/khach_san/src/main/java/com/example/khach_san/service/IKhachService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../khach_san/khach_san/src/main/java/com/example/khach_san/service/ILoaiKhachService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../khach_san/khach_san/src/main/java/com/example/khach_san/service/KhachService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../khach_san/khach_san/src/main/java/com/example/khach_san/service/LoaiKhachService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../khach_san/khach_san/src/main/webapp/header.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../khach_san/khach_san/src/main/webapp/khach/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../khach_san/khach_san/src/main/webapp/khach/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../khach_san/khach_san/src/main/webapp/khach/update.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../on_tap/on_tap/src/main/java/com/example/on_tap/config/FilterUTF8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../on_tap/on_tap/src/main/java/com/example/on_tap/controller/ProductServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../on_tap/on_tap/src/main/java/com/example/on_tap/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../on_tap/on_tap/src/main/java/com/example/on_tap/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../on_tap/on_tap/src/main/java/com/example/on_tap/repository/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../on_tap/on_tap/src/main/java/com/example/on_tap/repository/DBConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../on_tap/on_tap/src/main/java/com/example/on_tap/repository/ICategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../on_tap/on_tap/src/main/java/com/example/on_tap/repository/IProductRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../on_tap/on_tap/src/main/java/com/example/on_tap/repository/ProductRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../on_tap/on_tap/src/main/java/com/example/on_tap/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../on_tap/on_tap/src/main/java/com/example/on_tap/service/ICategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../on_tap/on_tap/src/main/java/com/example/on_tap/service/IProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../on_tap/on_tap/src/main/java/com/example/on_tap/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../on_tap/on_tap/src/main/webapp/header.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../on_tap/on_tap/src/main/webapp/product/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../on_tap/on_tap/src/main/webapp/product/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../on_tap/on_tap/src/main/webapp/product/update.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../quanLyPhongTro/quanLyPhongTro/src/main/java/com/example/quanlyphongtro/controller/RoomServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../quanLyPhongTro/quanLyPhongTro/src/main/java/com/example/quanlyphongtro/model/Pay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../quanLyPhongTro/quanLyPhongTro/src/main/java/com/example/quanlyphongtro/model/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../quanLyPhongTro/quanLyPhongTro/src/main/java/com/example/quanlyphongtro/repository/DBConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../quanLyPhongTro/quanLyPhongTro/src/main/java/com/example/quanlyphongtro/repository/IPayRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../quanLyPhongTro/quanLyPhongTro/src/main/java/com/example/quanlyphongtro/repository/IRoomRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../quanLyPhongTro/quanLyPhongTro/src/main/java/com/example/quanlyphongtro/repository/PayRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../quanLyPhongTro/quanLyPhongTro/src/main/java/com/example/quanlyphongtro/repository/RoomRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../quanLyPhongTro/quanLyPhongTro/src/main/java/com/example/quanlyphongtro/service/IPayService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../quanLyPhongTro/quanLyPhongTro/src/main/java/com/example/quanlyphongtro/service/IRoomService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../quanLyPhongTro/quanLyPhongTro/src/main/java/com/example/quanlyphongtro/service/PayServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../quanLyPhongTro/quanLyPhongTro/src/main/java/com/example/quanlyphongtro/service/RoomServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../quanLyPhongTro/quanLyPhongTro/src/main/webapp/header.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../quanLyPhongTro/quanLyPhongTro/src/main/webapp/room/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../quanLyPhongTro/quanLyPhongTro/src/main/webapp/room/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../quanLyPhongTro/quanLyPhongTro/src/main/webapp/room/update.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module2" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/product/controller/ProductServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/product/controller/ProductServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/product/dto/ProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/product/dto/ProductDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/product/model/Manufactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/product/model/Manufactor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/product/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/product/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/product/repository/ConnectDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/product/repository/ConnectDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/product/repository/IManufactorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/product/repository/IManufactorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/product/repository/IProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/product/repository/IProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/product/repository/ManufactorRepsitory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/product/repository/ManufactorRepsitory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/product/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/product/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/product/service/IManufactorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/product/service/IManufactorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/product/service/IProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/product/service/IProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/product/service/ManufactorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/product/service/ManufactorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/product/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/product/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProductTi/src/main/java/com/example/productti/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProductTi/src/main/java/com/example/productti/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProductTi/src/main/java/com/example/productti/repository/impl/ProductRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProductTi/src/main/java/com/example/productti/repository/impl/ProductRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProductTi/src/main/webapp/product/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProductTi/src/main/webapp/product/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bt6/dinhdangvanbanvoicss/1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../bt6/dinhdangvanbanvoicss/1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bt6/dinhdangvanbanvoicss/2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../bt6/dinhdangvanbanvoicss/2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/css.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/danang.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/demo/src/main/java/com/example/demo/SumServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/demo/src/main/webapp/WEB-INF/Result.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/html.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo1/demo1/src/main/java/com/example/demo1/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo1/demo1/src/main/java/com/example/demo1/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demoJDBC/demoJDBC/src/main/java/com/example/demojdbc/Service/IUserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demoJDBC/demoJDBC/src/main/java/com/example/demojdbc/Service/IUserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demoJDBC/demoJDBC/src/main/java/com/example/demojdbc/Service/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demoJDBC/demoJDBC/src/main/java/com/example/demojdbc/Service/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demoJDBC/demoJDBC/src/main/java/com/example/demojdbc/controller/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demoJDBC/demoJDBC/src/main/java/com/example/demojdbc/controller/UserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demoJDBC/demoJDBC/src/main/java/com/example/demojdbc/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demoJDBC/demoJDBC/src/main/java/com/example/demojdbc/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demoJDBC/demoJDBC/src/main/webapp/view/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../demoJDBC/demoJDBC/src/main/webapp/view/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demoJDBC/demoJDBC/src/main/webapp/view/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../demoJDBC/demoJDBC/src/main/webapp/view/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../quan_ly_dien_thoai/quan_ly_dien_thoai/src/main/java/com/example/quan_ly_dien_thoai/controller/PhoneServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../quan_ly_dien_thoai/quan_ly_dien_thoai/src/main/java/com/example/quan_ly_dien_thoai/controller/PhoneServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../quan_ly_dien_thoai/quan_ly_dien_thoai/src/main/java/com/example/quan_ly_dien_thoai/model/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../quan_ly_dien_thoai/quan_ly_dien_thoai/src/main/java/com/example/quan_ly_dien_thoai/model/Phone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../quan_ly_dien_thoai/quan_ly_dien_thoai/src/main/java/com/example/quan_ly_dien_thoai/repository/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../quan_ly_dien_thoai/quan_ly_dien_thoai/src/main/java/com/example/quan_ly_dien_thoai/repository/DBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../quan_ly_dien_thoai/quan_ly_dien_thoai/src/main/java/com/example/quan_ly_dien_thoai/repository/IPhoneRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../quan_ly_dien_thoai/quan_ly_dien_thoai/src/main/java/com/example/quan_ly_dien_thoai/repository/IPhoneRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../quan_ly_dien_thoai/quan_ly_dien_thoai/src/main/java/com/example/quan_ly_dien_thoai/repository/PhoneRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../quan_ly_dien_thoai/quan_ly_dien_thoai/src/main/java/com/example/quan_ly_dien_thoai/repository/PhoneRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../quan_ly_dien_thoai/quan_ly_dien_thoai/src/main/java/com/example/quan_ly_dien_thoai/service/IPhoneService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../quan_ly_dien_thoai/quan_ly_dien_thoai/src/main/java/com/example/quan_ly_dien_thoai/service/IPhoneService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../quan_ly_dien_thoai/quan_ly_dien_thoai/src/main/java/com/example/quan_ly_dien_thoai/service/PhoneServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../quan_ly_dien_thoai/quan_ly_dien_thoai/src/main/java/com/example/quan_ly_dien_thoai/service/PhoneServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../quan_ly_dien_thoai/quan_ly_dien_thoai/src/main/webapp/view/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../quan_ly_dien_thoai/quan_ly_dien_thoai/src/main/webapp/view/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../quan_ly_dien_thoai/quan_ly_dien_thoai/src/main/webapp/view/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../quan_ly_dien_thoai/quan_ly_dien_thoai/src/main/webapp/view/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../quan_ly_khach_hang/quan_ly_khach_hang/src/main/java/com/example/quan_ly_khach_hang/CustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../quan_ly_khach_hang/quan_ly_khach_hang/src/main/java/com/example/quan_ly_khach_hang/CustomerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../quan_ly_khach_hang/quan_ly_khach_hang/src/main/java/com/example/quan_ly_khach_hang/controller/CustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../quan_ly_khach_hang/quan_ly_khach_hang/src/main/java/com/example/quan_ly_khach_hang/controller/CustomerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../quan_ly_khach_hang/quan_ly_khach_hang/src/main/java/com/example/quan_ly_khach_hang/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../quan_ly_khach_hang/quan_ly_khach_hang/src/main/java/com/example/quan_ly_khach_hang/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../quan_ly_khach_hang/quan_ly_khach_hang/src/main/java/com/example/quan_ly_khach_hang/repository/CusomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../quan_ly_khach_hang/quan_ly_khach_hang/src/main/java/com/example/quan_ly_khach_hang/repository/CusomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../quan_ly_khach_hang/quan_ly_khach_hang/src/main/java/com/example/quan_ly_khach_hang/repository/CustomerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../quan_ly_khach_hang/quan_ly_khach_hang/src/main/java/com/example/quan_ly_khach_hang/repository/ICustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../quan_ly_khach_hang/quan_ly_khach_hang/src/main/java/com/example/quan_ly_khach_hang/repository/ICustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../quan_ly_khach_hang/quan_ly_khach_hang/src/main/java/com/example/quan_ly_khach_hang/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../quan_ly_khach_hang/quan_ly_khach_hang/src/main/java/com/example/quan_ly_khach_hang/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../quan_ly_khach_hang/quan_ly_khach_hang/src/main/java/com/example/quan_ly_khach_hang/service/ICustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../quan_ly_khach_hang/quan_ly_khach_hang/src/main/java/com/example/quan_ly_khach_hang/service/ICustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../quan_ly_khach_hang/quan_ly_khach_hang/src/main/webapp/view/create.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../quan_ly_khach_hang/quan_ly_khach_hang/src/main/webapp/view/customer/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../quan_ly_khach_hang/quan_ly_khach_hang/src/main/webapp/view/customer/add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../quan_ly_khach_hang/quan_ly_khach_hang/src/main/webapp/view/customer/delete.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../quan_ly_khach_hang/quan_ly_khach_hang/src/main/webapp/view/customer/delete.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../quan_ly_khach_hang/quan_ly_khach_hang/src/main/webapp/view/customer/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../quan_ly_khach_hang/quan_ly_khach_hang/src/main/webapp/view/customer/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../quan_ly_khach_hang/quan_ly_khach_hang/src/main/webapp/view/layout/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../quan_ly_khach_hang/quan_ly_khach_hang/src/main/webapp/view/layout/head.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../quan_ly_khach_hang/quan_ly_khach_hang/src/main/webapp/view/layout/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../quan_ly_khach_hang/quan_ly_khach_hang/src/main/webapp/view/layout/navbar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../quan_ly_khach_hang/quan_ly_khach_hang/src/main/webapp/view/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../quan_ly_khach_hang/quan_ly_khach_hang/src/main/webapp/view/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tu_dien_don_gian/tu_dien_don_gian/src/main/java/com/example/tu_dien_don_gian/TranslateServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../tu_dien_don_gian/tu_dien_don_gian/src/main/java/com/example/tu_dien_don_gian/TranslateServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ud_chuyen_doi_tien_te/ud_chuyen_doi_tien_te/src/main/java/com/example/ud_chuyen_doi_tien_te/ConverterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ud_chuyen_doi_tien_te/ud_chuyen_doi_tien_te/src/main/java/com/example/ud_chuyen_doi_tien_te/ConverterServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ung_dung_may_tinh/ung_dung_may_tinh/src/main/java/model/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ung_dung_may_tinh/ung_dung_may_tinh/src/main/java/model/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ung_dung_may_tinh/ung_dung_may_tinh/src/main/java/model/CalculatorServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ung_dung_may_tinh/ung_dung_may_tinh/src/main/java/model/CalculatorServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ung_dung_quan_ly_khach_hang/ung_dung_quan_ly_khach_hang/src/main/java/com/example/ung_dung_quan_ly_khach_hang/controller/CustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ung_dung_quan_ly_khach_hang/ung_dung_quan_ly_khach_hang/src/main/java/com/example/ung_dung_quan_ly_khach_hang/controller/CustomerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ung_dung_quan_ly_khach_hang/ung_dung_quan_ly_khach_hang/src/main/java/com/example/ung_dung_quan_ly_khach_hang/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ung_dung_quan_ly_khach_hang/ung_dung_quan_ly_khach_hang/src/main/java/com/example/ung_dung_quan_ly_khach_hang/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ung_dung_quan_ly_khach_hang/ung_dung_quan_ly_khach_hang/src/main/java/com/example/ung_dung_quan_ly_khach_hang/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ung_dung_quan_ly_khach_hang/ung_dung_quan_ly_khach_hang/src/main/java/com/example/ung_dung_quan_ly_khach_hang/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ung_dung_quan_ly_khach_hang/ung_dung_quan_ly_khach_hang/src/main/java/com/example/ung_dung_quan_ly_khach_hang/service/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ung_dung_quan_ly_khach_hang/ung_dung_quan_ly_khach_hang/src/main/java/com/example/ung_dung_quan_ly_khach_hang/service/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ung_dung_quan_ly_khach_hang/ung_dung_quan_ly_khach_hang/src/main/webapp/customer/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../ung_dung_quan_ly_khach_hang/ung_dung_quan_ly_khach_hang/src/main/webapp/customer/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ung_dung_quan_ly_khach_hang/ung_dung_quan_ly_khach_hang/src/main/webapp/customer/delete.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../ung_dung_quan_ly_khach_hang/ung_dung_quan_ly_khach_hang/src/main/webapp/customer/delete.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ung_dung_quan_ly_khach_hang/ung_dung_quan_ly_khach_hang/src/main/webapp/customer/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../ung_dung_quan_ly_khach_hang/ung_dung_quan_ly_khach_hang/src/main/webapp/customer/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ung_dung_quan_ly_khach_hang/ung_dung_quan_ly_khach_hang/src/main/webapp/customer/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../ung_dung_quan_ly_khach_hang/ung_dung_quan_ly_khach_hang/src/main/webapp/customer/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ung_dung_quan_ly_khach_hang/ung_dung_quan_ly_khach_hang/src/main/webapp/customer/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../ung_dung_quan_ly_khach_hang/ung_dung_quan_ly_khach_hang/src/main/webapp/customer/view.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ung_dung_quan_ly_khach_hang/ung_dung_quan_ly_khach_hang/src/main/webapp/error-404.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../ung_dung_quan_ly_khach_hang/ung_dung_quan_ly_khach_hang/src/main/webapp/error-404.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Jsp File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2eLqwQ7Sz6s4DXpiEg5rCHPPvZY" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "E:/Codegym/C0823I1/module3/Product/Product",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.86" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.86" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="hot-swap-classes" />
+      <deployment>
+        <artifact name="Gradle : com.example : Product-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="18189063-d048-4fc9-ac1f-7d671b7ef4ec" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="60638" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : com.example : Product-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="83946942-a36d-4f47-8aee-0f60cf491220" name="Changes" comment="" />
+      <created>1711694462712</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1711694462712</updated>
+      <workItem from="1711694463753" duration="76000" />
+      <workItem from="1711694559975" duration="16350000" />
+      <workItem from="1712146530665" duration="1133000" />
+      <workItem from="1712243915760" duration="592000" />
+      <workItem from="1712320795833" duration="2790000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -26,8 +26,8 @@ public class ProductRepositoryImpl implements IProductRepository {
                     int id = resultSet.getInt("id");
                     String name = resultSet.getString("name");
                     Date day = resultSet.getDate("day");
-                    String nameCategory = resultSet.getString("name_category");
-                    Product product = new Product(id, name, day, nameCategory);
+                    String nameCategory1 = resultSet.getString("name_category");
+                    Product product = new Product(id, name, day, nameCategory1);
                     products.add(product);
                 }
             } catch (SQLException throwables) {

@@ -22,10 +22,10 @@
                         <a class="nav-link active" aria-current="page" href="http://localhost:8080">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/room?action=list"><i class="fas fa-list"></i> Danh sách</a>
+                        <a class="nav-link" href="/khach?action=list"><i class="fas fa-list"></i> Danh sách</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/room?action=create"><i class="fas fa-plus-circle"></i> Thêm
+                        <a class="nav-link" href="/khach?action=create"><i class="fas fa-plus-circle"></i> Thêm
                             mới</a>
                     </li>
                 </ul>

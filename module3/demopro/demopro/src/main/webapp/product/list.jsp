@@ -3,98 +3,139 @@
 <html>
 <head>
     <title>Title</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"></head>
+    <link rel="stylesheet" href="/static/bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/fontawesome-free-5.15.4-web/css/all.min.css">
+</head>
 <body>
+<%--id="id_category"--%>
+<%@ include file="/header.jsp" %>
+<br>
 <div class="container">
     <div class="row">
         <div class="col-sm">
-            <a href="/product?action=create">Thêm mới</a>
+            <form  method="get">
+                <div class="form-group">
+                    <input hidden=hidden name="action" value="search">
+                    <select  class="form-control" name="tenDanhMuc">
+                        <option value="">Chọn category.....</option>
+                        <c:forEach items="${categories}" var="kh">
+                            <option value="${kh.getTen_danh_muc()}">${kh.getTen_danh_muc()}</option>
+                        </c:forEach>
+                    </select>
+                    <br>
+                    <input type="text" name="name" class="form-control">
+                    <br>
+                    <button class="btn btn-success" type="submit">Search</button>
+                </div>
+            </form>
         </div>
     </div>
     <div class="row">
-        <div class="col-sm">
-            <c:if test="${!empty products}">
-                <%--                <form class="d-flex col-4"  method="get">--%>
-                <%--                    <input hidden name="action" value="search" placeholder="Nhập tên">--%>
-                <%--                    <input type="text" style="border-radius: 6px" name="name" placeholder="Nhập tên">--%>
-                <%--                    <button class="btn btn-outline-success" type="submit">Search</button>--%>
-                <%--                </form>--%>
-                <table class="table table-hover" id="myTable">
-                    <thead>
-                    <tr>
-                        <th scope="col">STT</th>
-<%--                        <th scope="col">Mã</th>--%>
-                        <th scope="col">Name</th>
-                        <th scope="col">Giá</th>
-                        <th scope="col">Số lượng</th>
-                        <th scope="col">Color</th>
-                        <th scope="col">Mô tả</th>
-                        <th scope="col">Tên danh mục</th>
-                        <th scope="col">Update</th>
-                        <th scope="col">Delete</th>
+        <table class="table table-hover" id="myTable">
+            <thead>
+            <tr>
+                <th scope="col">STT</th>
+                <th scope="col">Mã</th>
+                <th scope="col">Name</th>
+                <th scope="col">Giá</th>
+                <th scope="col">Số lượng</th>
+                <th scope="col">Color</th>
+                <th scope="col">Mô tả</th>
+                <th scope="col">Tên danh mục</th>
+                <th scope="col">Update</th>
+                <th scope="col">Delete</th>
+                <th scope="col">View</th>
 
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <c:forEach items="${products}" var="l" varStatus="loop">
-                        <tr>
-                            <th scope="row">${loop.index + 1}</th>
-<%--                            <td>${l.id_product}</td>--%>
-                            <td>${l.name}</td>
-                            <td>${l.gia}</td>
-                            <td>${l.soLuong}</td>
-                            <td>${l.color}</td>
-                            <td>${l.moTa}</td>
-                            <td>${l.ten_danh_muc}</td>
-<%--                            <td>--%>
-<%--                                    &lt;%&ndash;                                <a href="/product?action=update&id=${l.id}"  type="button"&ndash;%&gt;--%>
-<%--                                    &lt;%&ndash;                                   class="btn btn-primary">&ndash;%&gt;--%>
-<%--                                <i class="far fa-edit fa-lg"></i>--%>
-<%--                                    &lt;%&ndash;                                </a>&ndash;%&gt;--%>
-<%--                            </td>--%>
-<%--                            <td>--%>
-<%--                                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="${l.id}">--%>
-<%--                                    <i class="fas fa-trash" style="color: white;"></i>--%>
-<%--                                </button>--%>
-<%--                            </td>--%>
-                        </tr>
-                    </c:forEach>
-                    </tbody>
-                </table>
-            </c:if>
-        </div>
+            </tr>
+            </thead>
+            <tbody>
+            <c:forEach items="${products}" var="l" varStatus="loop">
+                <tr>
+                    <th scope="row">${loop.index + 1}</th>
+                    <td>${l.id_product}</td>
+                    <td>${l.name}</td>
+                    <td>${l.gia}</td>
+                    <td>${l.soLuong}</td>
+                    <td>${l.color}</td>
+                    <td>${l.moTa}</td>
+                    <td>${l.ten_danh_muc}</td>
+                    <td>
+                        <a href="/product?action=update&id=${l.id_product}" type="button"
+                           class="btn btn-primary">
+                            <i class="far fa-edit fa-lg"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                data-bs-target="#deleteModal${l.id_product}">
+                            <i class="far fa-trash-alt fa-lg"></i>
+                        </button>
+
+                        <!-- Modal Xác nhận Xóa -->
+                        <div class="modal fade" id="deleteModal${l.id_product}" tabindex="-1"
+                             aria-labelledby="deleteModalLabel${l.id_product}"
+                             aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="deleteModalLabel${l.id_product}">Xác nhận
+                                            Xóa</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Bạn có chắc chắn muốn xóa máy có mã: ${l.id_product} không?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                            Đóng
+                                        </button>
+                                        <a href="/product?action=delete&id=${l.id_product}"
+                                           class="btn btn-danger">Xóa</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#viewModal${l.id_product}">
+                            <i class="fas fa-info-circle"></i>
+                        </button>
+
+                        <!-- Modal view -->
+                        <div class="modal fade" id="viewModal${l.id_product}" tabindex="-1"
+                             aria-labelledby="viewModalLabel${l.id_product}"
+                             aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="viewModalLabel${l.id_product}">Thông tin
+                                            product</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h6>ID: ${l.id_product}</h6>
+                                        <h6>Name: ${l.name}</h6>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </c:forEach>
+
+            </tbody>
+        </table>
     </div>
 </div>
-<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="deleteModalLabel">Xác nhận xóa </h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                Bạn chắc chắn muốn xóa?
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
-                <button type="button" class="btn btn-danger" id="confirmDeleteBtn">Xác nhận</button>
-            </div>
-        </div>
-    </div>
-</div>
-<script>
-    var deleteModal = document.getElementById('deleteModal');
-    deleteModal.addEventListener('show.bs.modal', function (event) {
-        var button = event.relatedTarget;
-        var id = button.getAttribute('data-id');
-        var confirmButton = document.getElementById('confirmDeleteBtn');
-        confirmButton.setAttribute('onclick', 'location.href="/product?action=delete&id=' + id + '"');
-    });
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+
+<script src="/static/jquery/jquery-3.5.1.min.js"></script>
+<script src="/static/jquery/popper.min.js"></script>
+<script src="/static/bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+<script src="/static/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -30,11 +30,11 @@ public class Product {
         this.day = day;
         this.idCategory = idCategory;
     }
-    public Product(int id, String name, Date day, String nameCategory) {
+    public Product(int id, String name, Date day, String nameCategory1) {
         this.id = id;
         this.name = name;
         this.day = day;
-        this.nameCategory = nameCategory;
+        this.nameCategory = nameCategory1;
     }
 
 
