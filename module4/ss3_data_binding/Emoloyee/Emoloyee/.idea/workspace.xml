@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f1302a15-bc36-4ad1-aae8-ad153e9e20c5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../ss2/Caculator/Caculator/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Email/Email/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Email/Email/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Email/Email/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Email/Email/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Email/Email/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Email/Email/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Email/Email/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/emoloyee/controller/EmployeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/emoloyee/model/Emoloyee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sandwich/Sandwich/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sandwich/Sandwich/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Caculator/Caculator/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Caculator/Caculator/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Caculator/Caculator/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Caculator/Caculator/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Caculator/Caculator/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Caculator/Caculator/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Caculator/Caculator/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Caculator/Caculator/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Caculator/Caculator/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Caculator/Caculator/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Caculator/Caculator/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Caculator/Caculator/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Caculator/Caculator/src/main/java/com/example/caculator/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Caculator/Caculator/src/main/java/com/example/caculator/controller/CalculatorController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Caculator/Caculator/src/main/java/com/example/caculator/model/Caculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Caculator/Caculator/src/main/java/com/example/caculator/service/CalculatorServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Caculator/Caculator/src/main/java/com/example/caculator/service/ICalculatorService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Caculator/Caculator/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Caculator/Caculator/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Caculator/Caculator/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Caculator/Caculator/src/main/webapp/WEB-INF/views/result.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Caculator/Caculator/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Caculator/Caculator/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Search/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Search/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Search/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Search/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Search/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Search/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Search/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Search/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Search/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Search/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Search/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Search/src/main/java/com/example/search/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Search/src/main/java/com/example/search/controller/DictionaryController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Search/src/main/java/com/example/search/model/Search.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Search/src/main/java/com/example/search/service/DictionaryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Search/src/main/java/com/example/search/service/IDictionaryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Search/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Search/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Search/src/main/webapp/WEB-INF/views/dictionary.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Search/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/Search/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/Caculator/Caculator/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/Caculator/Caculator/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/Caculator/Caculator/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/Caculator/Caculator/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/Caculator/Caculator/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/Caculator/Caculator/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/Caculator/Caculator/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/Caculator/Caculator/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/Caculator/Caculator/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/Caculator/Caculator/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/Caculator/Caculator/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/Caculator/Caculator/src/main/java/com/example/caculator/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/Caculator/Caculator/src/main/java/com/example/caculator/controller/CalculatorController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/Caculator/Caculator/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/Caculator/Caculator/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/Caculator/Caculator/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/Caculator/Caculator/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/Caculator/Caculator/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/Sandwich/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/Sandwich/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/Sandwich/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/Sandwich/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/Sandwich/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/Sandwich/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/Sandwich/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/Sandwich/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/Sandwich/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/Sandwich/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/Sandwich/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/Sandwich/src/main/java/com/example/sandwich/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/Sandwich/src/main/java/com/example/sandwich/controller/SpiceController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/Sandwich/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/Sandwich/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/Sandwich/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/Sandwich/src/main/webapp/WEB-INF/views/save.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/Sandwich/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/Sandwich/src/main/webapp/index.jsp" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2fJpWY85OQ7qq1IRH8rZPcO08ZJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "E:/Codegym/C0823I1/module4/ss3_data_binding/Emoloyee/Emoloyee/src/main/webapp/WEB-INF",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Codegym\C0823I1\module4\ss3_data_binding\Emoloyee\Emoloyee\src\main\webapp\WEB-INF" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.86" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.86" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment>
+        <artifact name="Gradle : com.example : Emoloyee-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/Gradle___com_example___Emoloyee_1_0_SNAPSHOT_war" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings />
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : com.example : Emoloyee-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f1302a15-bc36-4ad1-aae8-ad153e9e20c5" name="Changes" comment="" />
+      <created>1713529069974</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713529069974</updated>
+      <workItem from="1713529070971" duration="787000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

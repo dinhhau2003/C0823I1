@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Thêm mới sản phẩm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style>
+        label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Home</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" th:href="@{/duAn/list}">Danh sách sản
+                                    phẩm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" th:href="@{/duAn/create}">Thêm mới sản
+                                    phẩm</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <h2 style="text-align: center">Thêm mới sản phẩm</h2>
+        </div>
+    </div>
+    <form th:action="@{/duAn/create}" method="post" th:object="${duAn}">
+        <div class="row">
+            <div class="col-sm">
+                <label for="maDuAn" class="form-label">Product ID:</label>
+                <input type="text" th:field="*{maDuAn}" class="form-control" id="maDuAn"
+                       placeholder="Nhập mã dự án">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <p th:if="${#fields.hasErrors('maDuAn')}" th:errors="*{maDuAn}" style="color: red"></p>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm">
+                <label for="tenDuAn" class="form-label">Product name:</label>
+                <input type="text" th:field="*{tenDuAn}" class="form-control" id="tenDuAn"
+                       placeholder="Nhập tên dự án">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <p th:if="${#fields.hasErrors('tenDuAn')}" th:errors="*{tenDuAn}" style="color: red"></p>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm">
+                <label for="category" class="form-label">Category:</label>
+                <select id="category" th:field="*{doanhNghiep}" class="form-select">
+                    <option value="" selected>Choose...</option>
+                    <option th:each="doanhNghiep : ${doanhNghieps}"
+                            th:value="${doanhNghiep.getIdDoanhNghiep()}"
+                            th:text="${doanhNghiep.getTenDoanhNghiep()}"></option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm">
+                <label for="kinhPhi" class="form-label">Product name:</label>
+                <input type="text" th:field="*{kinhPhi}" class="form-control" id="kinhPhi"
+                       placeholder="Nhập kinh phí">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <p th:if="${#fields.hasErrors('kinhPhi')}" th:errors="*{kinhPhi}" style="color: red"></p>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm">
+                <label for="moTa" class="form-label">Product name:</label>
+                <input type="text" th:field="*{moTa}" class="form-control" id="moTa"
+                       placeholder="Nhập tên mô tả">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <p th:if="${#fields.hasErrors('moTa')}" th:errors="*{moTa}" style="color: red"></p>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm">
+                <label for="thoiGianDangKy" class="form-label">Product name:</label>
+                <input type="number" th:field="*{thoiGianDangKy}" class="form-control" id="thoiGianDangKy"
+                       placeholder="Nhập thời gian đăng ký">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <p th:if="${#fields.hasErrors('thoiGianDangKy')}" th:errors="*{thoiGianDangKy}" style="color: red"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <label for="ngayDangKy" class="form-label">Date Of Manufacture:</label>
+                <input type="date" th:field="*{ngayDangKy}" class="form-control" id="ngayDangKy">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <p th:if="${#fields.hasErrors('ngayDangKy')}" th:errors="*{ngayDangKy}"
+                   style="color: red"></p>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm">
+                <button type="submit" class="btn btn-primary mr-2">Save</button>
+                <a type="button" th:href="@{/duAn/list}" class="btn btn-warning">Cancel</a>
+            </div>
+        </div>
+    </form>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+</html>

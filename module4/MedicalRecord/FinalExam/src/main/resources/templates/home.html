@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Manager</title>
+    <link rel="stylesheet" th:href="@{/bootstrap/bootstrap.min.css}">
+    <script th:src="@{/bootstrap/bootstrap.bundle.min.js}"></script>
+</head>
+<body>
+<h1 class="h1">Danh sách bệnh án</h1>
+
+
+<div class="card mb-4">
+    <div class="card-header">
+        Tìm kiếm
+    </div>
+    <div class="card-body">
+        <form action="/medicalRecord/list">
+            <select class=" form-control mb-4" name="searchRecordClass">
+                <option th:selected="${searchRecordClass==''}" value="">
+                    Tất cả
+                </option>
+                <option th:each="recordClass:${recordClassList}"
+                        th:value="${recordClass.name}"
+                        th:text="${recordClass.name}"
+                        th:selected="(${searchRecordClass} == ${recordClass.name})">
+                </option>
+            </select>
+            <input class="form-control mb-4" name="searchPatientName" placeholder="Nhập tên bệnh nhân"
+                   th:value="${searchPatientName}">
+            <button class="btn btn-primary"><i class="fas fa-search me-1"></i>Tìm kiếm</button>
+        </form>
+    </div>
+</div>
+<div th:if="${message}!=null" class="alert alert-warning" role="alert" th:text="${message}">
+
+</div>
+
+<div class="card mb-4">
+    <div class="card-header">
+        <i class="fas fa-table me-1"></i>
+        Danh sách bệnh án
+    </div>
+
+    <div class="card-body">
+        <div class="mb-4">
+            <a th:href="@{/medicalRecord/create}" class="btn btn-info">Thêm mới bệnh án</a>
+        </div>
+        <table id="routerDatatables" class="table table-bordered table-striped table-sm">
+            <thead>
+            <tr>
+                <th class="text-center">STT</th>
+                <th class="text-center">Mã bệnh án </th>
+                <th class="text-center">Tên Bệnh nhân</th>
+                <th class="text-center">Ngày nhập viện</th>              
+                <th class="text-center">Ngày ra viện</th>
+                <th class="text-center">Mô tả bệnh</th>
+                <th class="text-center">Tác vụ</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="medicalRecord,stats:${page.getContent()}">
+                <td class="text-center" th:text="${stats.count+page.getSize()*page.getNumber()}">
+                <td class="text-center" th:text="${medicalRecord.id}">
+                <td class="text-center" th:text="${medicalRecord.patientName}">
+                <td class="text-center" th:text="${medicalRecord.startDate}">
+                <td class="text-center" th:text="${medicalRecord.endDate}">                
+                <td class="text-center" th:text="${medicalRecord.description}">
+                <td class="text-center">
+                    <div class="btn-group btn-group-sm" role="group" aria-label="Basic mixed styles example">
+                        <a th:href="@{'/medicalRecord/edit/'+${medicalRecord.id}}" type="button" class="btn btn-warning">Sửa</a>
+                        <button th:data-id="${medicalRecord.getId()}" th:data-name="${medicalRecord.getRecordClass().name}"
+                                th:onclick="deleteProduct(this.getAttribute('data-id'),this.getAttribute('data-name'))"
+                                type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                data-bs-target="#deleteModal">Xóa
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+<!--        paging nav-->
+        <nav aria-label="...">
+            <ul class="pagination">
+                <li class="page-item" th:classappend="${!page.hasPrevious()} ? disabled">
+                    <a class="page-link"
+                       th:href="@{/medicalRecord/list(pageNumber=0,searchPatientName=${searchPatientName},searchRecordClass=${searchRecordClass})}">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item" th:classappend="${!page.hasPrevious()} ? disabled">
+                    <a class="page-link"
+                       th:href="@{/medicalRecord/list(pageNumber=${page.getNumber()-1},searchPatientName=${searchPatientName},searchRecordClass=${searchRecordClass})}">Previous</a>
+                </li>
+
+                <li th:each="p:${#numbers.sequence(page.getNumber()-3,page.getNumber()+3)}"
+                    th:if="${p>=0&&p<page.getTotalPages()}"
+                    th:classappend="${p==page.getNumber()} ? active"
+                    class="page-item">
+                    <a class="page-link"
+                       th:href="@{/medicalRecord/list(pageNumber=${p},searchPatientName=${searchPatientName},searchRecordClass=${searchRecordClass})}"
+                       th:text="${p+1}"></a>
+                </li>
+
+                <li class="page-item" th:classappend="${!page.hasNext()} ? disabled">
+                    <a class="page-link"
+                       th:href="@{/medicalRecord/list(pageNumber=${page.getNumber()+1},searchPatientName=${searchPatientName},searchRecordClass=${searchRecordClass})}">Next</a>
+                </li>
+                <li class="page-item" th:classappend="${!page.hasNext()} ? disabled">
+                    <a class="page-link"
+                       th:href="@{/medicalRecord/list(pageNumber=${page.getTotalPages()-1},searchPatientName=${searchPatientName},searchRecordClass=${searchRecordClass})}">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<!-- MODAL TÁC VỤ XÓA-->
+<!-- Modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form th:action="@{/medicalRecord/delete}" method="post">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="deleteModalLabel">Xác nhận xóa dữ liệu !</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body">
+                        Bạn có muốn thực hiện xóa bệnh án <span style="color: red" id="delete-name"></span> ?
+                    </div>
+                    <input name="deleteId" type="hidden" id="hidden-delete-id">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                    <button type="submit" class="btn btn-danger">Xóa dữ liệu</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script th:inline="javascript">
+</script>
+
+<script>
+    function deleteProduct(id, name) {
+        document.getElementById("delete-name").innerHTML = id;
+        document.getElementById("hidden-delete-id").value = id;
+    }
+</script>
+</body>
+</html>

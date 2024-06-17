@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link th:replace="list::getBootstrap">
+    <link rel="stylesheet" href="/css/css_form.css">
+</head>
+<body>
+<div align="center">
+    <form method="post" th:object="${duAnDTO}" id="form">
+        <table border="1" cellpadding="5">
+            <tr>
+                <th><label for="class">Hoc Sinh:</label></th>
+                <td>
+                    <select id="class" class="btn border border-secondary input-form" th:field="*{doanhNghiep}" >
+                        <option th:each="doanhNghiep:${hocSinhList}"
+                                th:value="${doanhNghiep.id}"
+                                th:text="${doanhNghiep.name}">
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="ngayMuon">Ngay Muon</label></th>
+                <td>
+                    <input id="ngayMuon" class="btn border border-secondary input-form" autocomplete="off" type="date" th:field="*{ngayMuon}">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <span class="error" th:if="${#fields.hasErrors('ngayMuon')}" th:errors="*{ngayMuon}"></span>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="ngayTra">Ngay Tra</label></th>
+                <td>
+                    <input id="ngayTra" class="btn border border-secondary input-form" autocomplete="off" type="date" th:field="*{ngayTra}">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <span class="error" th:if="${#fields.hasErrors('ngayTra')}" th:errors="*{ngayTra}"></span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input class="btn btn-outline-warning" type="button" value="Cancel"
+                           onclick="confirmBack('/list')"/>
+                    <input class="btn btn-outline-success" type="submit" value="Save" onclick="confirmSubmit()"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+<script th:insert="~{list::importScript}"></script>
+<script>
+    const confirmBack =(url)=>{
+        Swal.fire({
+            title: "Confirm!",
+            text: "Are you sure to get back ?",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+        }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href=url
+                }
+            }
+        );
+    }
+    function confirmSubmit() {
+        let form = document.getElementById("form")
+        form.onsubmit = function (e) {
+            var form1 = this;
+            e.preventDefault()
+            Swal.fire({
+                title: "Confirm!",
+                text: "Are you sure ?",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+            }).then((result) => {
+                    if (result.isConfirmed) {
+                        form1.submit();
+                    }
+                }
+            );
+        }
+    }
+    var msg = $("#msg").text()
+    if (!(msg === "")) {
+        Swal.fire({
+            title: "Success!",
+            text: msg,
+            icon: "success"
+        });
+    }
+</script>
+</body>
+</html>

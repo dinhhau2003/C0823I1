@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link th:replace="list::getBootstrap">
+    <link rel="stylesheet" href="/css/css_form.css">
+
+</head>
+<body>
+<div align="center">
+    <form method="post" th:object="${duAnDTO}" id="form">
+        <table border="1" cellpadding="5">
+            <tr>
+                <th><label for="maDuAn">Mã Dự Án</label></th>
+                <td>
+                    <input id="maDuAn" class="btn border border-secondary input-form" autocomplete="off" type="text" th:field="*{maDuAn}">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <span class="error" th:if="${#fields.hasErrors('maDuAn')}" th:errors="*{maDuAn}"></span>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="class">Doanh Nghiệp:</label></th>
+                <td>
+                    <select id="class" class="btn border border-secondary input-form" th:field="*{doanhNghiep}" >
+                        <option th:each="doanhNghiep:${doanhNghiepList}"
+                                th:value="${doanhNghiep.id}"
+                                th:text="${doanhNghiep.name}">
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="tenDuAn">Tên Dự Án</label></th>
+                <td>
+                    <input id="tenDuAn" class="btn border border-secondary input-form" autocomplete="off" type="text" th:field="*{tenDuAn}">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <span class="error" th:if="${#fields.hasErrors('tenDuAn')}" th:errors="*{tenDuAn}"></span>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="kinhPhi">Kinh Phí Yêu Cầu</label></th>
+                <td>
+                    <input id="kinhPhi" class="btn border border-secondary input-form" autocomplete="off" type="number" th:field="*{kinhPhi}">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <span class="error" th:if="${#fields.hasErrors('kinhPhi')}" th:errors="*{kinhPhi}"></span>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="moTa">Mô Tả</label></th>
+                <td>
+                    <textarea id="moTa" class="btn border border-secondary input-form" autocomplete="off" th:field="*{moTa}"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <span class="error" th:if="${#fields.hasErrors('moTa')}" th:errors="*{moTa}"></span>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="thoiGian">Thời Gian Đăng Ký</label></th>
+                <td>
+                    <input id="thoiGian" class="btn border border-secondary input-form" autocomplete="off" type="number" step="any" th:field="*{thoiGianDangKy}">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <span class="error" th:if="${#fields.hasErrors('thoiGianDangKy')}" th:errors="*{thoiGianDangKy}"></span>
+                </td>
+            </tr>
+<!--            <tr>-->
+<!--                <th><label for="ngayDK">Ngày Đăng Ký</label></th>-->
+<!--                <td>-->
+<!--                    <input id="ngayDK" class="btn border border-secondary input-form" readonly autocomplete="off" type="date" th:field="*{ngayDangKy}">-->
+<!--                </td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td></td>-->
+<!--                <td>-->
+<!--                    <span class="error" th:if="${#fields.hasErrors('ngayDangKy')}" th:errors="*{ngayDangKy}"></span>-->
+<!--                </td>-->
+<!--            </tr>-->
+            <tr>
+                <td colspan="2" align="center">
+                    <input class="btn btn-outline-warning" type="button" value="Cancel"
+                           onclick="confirmBack('/list')"/>
+                    <input class="btn btn-outline-success" type="submit" value="Save" onclick="confirmSubmit()"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+<script th:insert="~{list::importScript}"></script>
+<script>
+    const confirmBack =(url)=>{
+        Swal.fire({
+            title: "Confirm!",
+            text: "Are you sure to get back ?",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+        }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href=url
+                }
+            }
+        );
+    }
+    function confirmSubmit() {
+        let form = document.getElementById("form")
+        form.onsubmit = function (e) {
+            var form1 = this;
+            e.preventDefault()
+            Swal.fire({
+                title: "Confirm!",
+                text: "Are you sure ?",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+            }).then((result) => {
+                    if (result.isConfirmed) {
+                        form1.submit();
+                    }
+                }
+            );
+        }
+    }
+    var msg = $("#msg").text()
+    if (!(msg === "")) {
+        Swal.fire({
+            title: "Success!",
+            text: msg,
+            icon: "success"
+        });
+    }
+</script>
+</body>
+</html>

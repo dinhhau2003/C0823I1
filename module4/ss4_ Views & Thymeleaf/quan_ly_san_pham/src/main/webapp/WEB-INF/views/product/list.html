@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <th:block th:insert="~{layout/layout::library}"></th:block>
+
+</head>
+<body>
+
+<table class="table table-striped">
+
+    <div th:replace="~{layout/layout::navbar}"></div>
+    <form th:action="@{/product/search}" method="get">
+        <input type="text" name="name" placeholder="Enter product name">
+        <button type="submit">Search</button>
+    </form><br>
+    <br>
+    <button type="button" class="btn btn-outline-info"><a href="/product/create" style="text-decoration: none">Add new
+        Product</a></button>
+    <h2>Product List</h2>
+    <tr>
+        <th>STT</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Desc</th>
+        <th>Nha san xuat</th>
+        <th>Update</th>
+        <th>Delete</th>
+        <th>View</th>
+
+
+    </tr>
+
+    <tr th:each="product,status:${customerList}">
+        <td th:text="${status.count}"></td>
+        <td th:text="${product.nameProduct}"></td>
+        <td th:text="${product.price}"></td>
+        <td th:text="${product.desc}"></td>
+        <td th:text="${product.nsx}"></td>
+        <td>
+            <a th:href="@{/product/update(id=${product.id})}" class="btn btn-sm btn-primary">Update</a>
+        </td>
+        <td>
+            <form th:action="@{/product/delete}" method="post" style="display: inline;">
+                <input type="hidden" name="id" th:value="${product.id}">
+                <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+            </form>
+        </td>
+        <td>
+            <a class="btn btn-outline-info" th:href="@{/product/detail(id=${product.id})}">View</a>
+        </td>
+
+
+    </tr>
+    <tr>
+        <td colspan="7" th:if="${customerList.isEmpty()}" th:text="${'Danh sách trống'}">
+        </td>
+    </tr>
+</table>
+</body>
+</html>

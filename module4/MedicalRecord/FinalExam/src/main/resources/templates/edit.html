@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Sửa thông tin bệnh án</title>
+    <link rel="stylesheet" th:href="@{/bootstrap/bootstrap.min.css}">
+    <script th:src="@{/bootstrap/bootstrap.bundle.min.js}"></script>
+</head>
+<body>
+<div class="card">
+
+    <div class="container-fluid px-4">
+
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fas fa-edit me-1"></i>
+                Sửa thông tin bệnh án
+            </div>
+            <div class="card-body">
+                <form th:action="@{/medicalRecord/edit}" method="post" th:object="${medicalRecordDTO}">
+                    <div class="row g3">
+
+                        <input type="text" class="form-control" th:field="*{id}"
+                               th:classappend="${#fields.hasErrors('id')}?'is-invalid'" hidden>
+
+
+                        <div class="mb-3 col">
+                            <label class="form-label fw-bold">Tên bệnh nhân</label>
+                            <input type="text" class="form-control" th:field="*{patientName}"
+                                   th:classappend="${#fields.hasErrors('patientName')}?'is-invalid'">
+                            <small class="invalid-feedback fw-bold text-end"
+                                   th:if="${#fields.hasErrors('patientName')}" th:errors="*{patientName}"></small>
+                        </div>
+
+                        <div class="mb-3 col">
+                            <label class="form-label fw-bold">Ngày nhập viện</label>
+                            <input type="date" class="form-control" th:field="*{startDate}"
+                                   th:classappend="${#fields.hasErrors('startDate')}?'is-invalid'">
+                            <small class="invalid-feedback fw-bold text-end"
+                                   th:if="${#fields.hasErrors('startDate')}" th:errors="*{startDate}"></small>
+                        </div>
+
+                        <div class="mb-3 col">
+                            <label class="form-label fw-bold">Ngày ra viện</label>
+                            <input type="date" class="form-control" th:field="*{endDate}"
+                                   th:classappend="${#fields.hasErrors('endDate')}?'is-invalid'">
+                            <small class="invalid-feedback fw-bold text-end"
+                                   th:if="${#fields.hasErrors('endDate')}" th:errors="*{endDate}"></small>
+                        </div>
+
+                    </div>
+                    <div class=" row g3">
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">Loại bệnh án</label>
+                                <select class=" form-control " aria-hidden="true" th:field="*{recordClass}">
+                                    <option th:each="recordClass:${recordClassList}" th:value="${recordClass.id}"
+                                            th:text="${recordClass.name}"></option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 col">
+                            <label class="form-label fw-bold">Mô tả bệnh</label>
+                            <input type="text" class="form-control" th:field="*{description}">
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary mt-3">Cập nhật</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

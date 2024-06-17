@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Danh sách sản phẩm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style>
+        .pagination {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Home</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" th:href="@{/product/list}">Danh sách sản phẩm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" th:href="@{/product/create}">Thêm mới sản phẩm</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <h2 style="text-align: center">Danh sách sản phẩm</h2>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm">
+            <form th:action="@{/product/search}" method="get" class="d-flex">
+                <div class="input-group">
+                    <input type="text" th:value="${productName}" class="form-control" placeholder="Nhập tên sản phẩm..." name="productName">
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm">
+            <table class="table caption-top">
+                <caption>Danh sách sản phẩm</caption>
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Product ID</th>
+                    <th scope="col">Product Name</th>
+                    <th scope="col">Date Of Manufacture</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Category</th>
+                </tr>
+                </thead>
+                <tbody th:if="${not #lists.isEmpty(products)}">
+                <tr th:each="product, iterStat: ${products}">
+                    <th scope="row" th:text="${iterStat.count}"></th>
+                    <td th:text="${product.productId}"></td>
+                    <td th:text="${product.productName}"></td>
+                    <td th:text="${product.dateOfManufacture}"></td>
+                    <td th:text="${product.price}"></td>
+                    <td th:text="${product.category.categoryName}"></td>
+                </tr>
+                </tbody>
+                <tbody th:unless="${not #lists.isEmpty(products)}">
+                <tr>
+                    <td colspan="6" class="text-center">Không có sản phẩm nào được tìm thấy.</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm">
+            <!--            Không có search-->
+
+            <!--            <nav aria-label="Page navigation">-->
+            <!--                <ul class="pagination">-->
+            <!--                    <li th:class="${currentPage == 1}? 'page-item disabled' : 'page-item'">-->
+            <!--                        <a class="page-link" th:if="${currentPage != 1}"-->
+            <!--                           th:href="@{/product/list(page=${currentPage - 1}, size=${size})}">Previous</a>-->
+            <!--                        <span class="page-link" th:unless="${currentPage != 1}">Previous</span>-->
+            <!--                    </li>-->
+            <!--                    <li th:each="pageNo : ${#numbers.sequence(1, totalPages)}"-->
+            <!--                        th:class="${pageNo == currentPage}? 'page-item active' : 'page-item'">-->
+            <!--                        <a class="page-link" th:href="@{/product/list(page=${pageNo}, size=${size})}"-->
+            <!--                           th:text="${pageNo}"></a>-->
+            <!--                    </li>-->
+            <!--                    <li th:class="${currentPage == totalPages}? 'page-item disabled' : 'page-item'">-->
+            <!--                        <a class="page-link" th:if="${currentPage != totalPages}"-->
+            <!--                           th:href="@{/product/list(page=${currentPage + 1}, size=${size})}">Next</a>-->
+            <!--                        <span class="page-link" th:unless="${currentPage != totalPages}">Next</span>-->
+            <!--                    </li>-->
+            <!--                </ul>-->
+            <!--            </nav>-->
+
+            <!--            có search -->
+
+            <nav aria-label="Page navigation" th:if="${not #lists.isEmpty(products)}">
+                <ul class="pagination">
+                    <li th:class="${currentPage == 1}? 'page-item disabled' : 'page-item'">
+                        <a class="page-link" th:if="${currentPage != 1}"
+                           th:href="@{/product/search(page=${currentPage - 1}, size=${size}, productName=${productName})}">Previous</a>
+                        <span class="page-link" th:unless="${currentPage != 1}">Previous</span>
+                    </li>
+                    <li th:each="pageNo : ${#numbers.sequence(1, totalPages)}"
+                        th:class="${pageNo == currentPage}? 'page-item active' : 'page-item'">
+                        <a class="page-link"
+                           th:href="@{/product/search(page=${pageNo}, size=${size}, productName=${productName})}"
+                           th:text="${pageNo}"></a>
+                    </li>
+                    <li th:class="${currentPage == totalPages}? 'page-item disabled' : 'page-item'">
+                        <a class="page-link" th:if="${currentPage != totalPages}"
+                           th:href="@{/product/search(page=${currentPage + 1}, size=${size}, productName=${productName})}">Next</a>
+                        <span class="page-link" th:unless="${currentPage != totalPages}">Next</span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+</html>
