@@ -1,0 +1,142 @@
+{
+  "products": [
+    {
+      "id": "PROD-0001",
+      "name": "Blackmores Omega Double High Strength Fish Oil",
+      "moTa": "abc",
+      "price": "598000",
+      "soLuong": "1000",
+      "date": "2022-01-24",
+      "category": {
+        "id": "1",
+        "name": "Thực Phẩm Chức Năng"
+      }
+    },
+    {
+      "id": "PROD-0002",
+      "name": "Blackmores CoQ10 150mg",
+      "moTa": "abc",
+      "price": "513000",
+      "soLuong": "100",
+      "date": "2022-10-15",
+      "category": {
+        "id": "1",
+        "name": "Thực Phẩm Chức Năng"
+      }
+    },
+    {
+      "id": "PROD-0003",
+      "name": "Máy đo huyết áp bắp tay Microlife B3 Basic ",
+      "moTa": "abc",
+      "price": "1350000",
+      "soLuong": "500",
+      "date": "2023-02-03",
+      "category": {
+        "id": "2",
+        "name": "Thiết Bị Y Tế"
+      }
+    },
+    {
+      "id": "PROD-0004",
+      "name": "Efferalgan ",
+      "moTa": "abc",
+      "price": "30000",
+      "soLuong": "65",
+      "date": "2021-11-11",
+      "category": {
+        "id": "3",
+        "name": "Dược Phẩm"
+      }
+    },
+    {
+      "id": "PROD-0005",
+      "name": "Nhiệt Kế Hông ngoại kachi JXB-315 ",
+      "moTa": "abc",
+      "price": "768000",
+      "soLuong": "20",
+      "date": "2021-11-11",
+      "category": {
+        "id": "2",
+        "name": "Thiết Bị Y Tế"
+      }
+    },
+    {
+      "id": "PROD-0007",
+      "name": "blue",
+      "category": {
+        "id": "2",
+        "name": "Thiết Bị Y Tế"
+      },
+      "soLuong": "12",
+      "moTa": "abc",
+      "price": "50000",
+      "date": "2024-09-13"
+    },
+    {
+      "id": "PROD-0009",
+      "name": "aaaaaa",
+      "category": {
+        "id": "2",
+        "name": "Thiết Bị Y Tế"
+      },
+      "soLuong": "123",
+      "moTa": "abc",
+      "price": "50000000",
+      "date": "2024-09-04"
+    },
+    {
+      "id": "PROD-0006",
+      "name": "blue1",
+      "category": {
+        "id": "2",
+        "name": "Thiết Bị Y Tế"
+      },
+      "soLuong": "13",
+      "moTa": "not",
+      "price": "50000000",
+      "date": "2024-08-30"
+    },
+    {
+      "id": "PROD-0008",
+      "name": "Giày sneaker",
+      "category": {
+        "id": "3",
+        "name": "Dược Phẩm"
+      },
+      "soLuong": "123",
+      "moTa": "not",
+      "price": "231312",
+      "date": "2024-09-12"
+    },
+    {
+      "id": "PROD-0011",
+      "name": "Blackk",
+      "category": {
+        "id": "2",
+        "name": "Thiết Bị Y Tế"
+      },
+      "soLuong": "123",
+      "moTa": "sa",
+      "price": "50000000",
+      "date": "2024-09-05"
+    }
+  ],
+  "category": [
+    {
+      "id": "1",
+      "name": "Thực Phẩm Chức Năng"
+    },
+    {
+      "id": "2",
+      "name": "Thiết Bị Y Tế"
+    },
+    {
+      "id": "3",
+      "name": "Dược Phẩm"
+    },
+    {
+      "id": "4",
+      "name": "Dược Phẩm1"
+    }
+  ]
+}

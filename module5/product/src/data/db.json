@@ -1,0 +1,68 @@
+{
+  "products": [
+    {
+      "id": 3,
+      "name": "Nike DG House",
+      "price": "50000",
+      "date": "2024-09-19",
+      "category": {
+        "id": "2",
+        "name": "Lap top"
+      }
+    },
+    {
+      "id": 4,
+      "name": "abc",
+      "price": "50000000",
+      "date": "2024-09-05",
+      "category": {
+        "id": "1",
+        "name": "Điện thoại"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Giày sneaker",
+      "price": "13123",
+      "date": "2024-09-05",
+      "category": {
+        "id": "3",
+        "name": "Phụ kiện"
+      }
+    },
+    {
+      "id": 6,
+      "name": "iphone update",
+      "price": "231312",
+      "date": "2024-09-02",
+      "category": {
+        "id": "2",
+        "name": "Lap top"
+      }
+    },
+    {
+      "id": 7,
+      "name": "abdcv",
+      "price": "1343",
+      "date": "2024-08-28",
+      "category": {
+        "id": "1",
+        "name": "Điện thoại"
+      }
+    }
+  ],
+  "category": [
+    {
+      "id": "1",
+      "name": "Điện thoại"
+    },
+    {
+      "id": "2",
+      "name": "Lap top"
+    },
+    {
+      "id": "3",
+      "name": "Phụ kiện"
+    }
+  ]
+}

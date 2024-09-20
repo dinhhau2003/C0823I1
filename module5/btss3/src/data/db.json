@@ -1,0 +1,22 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "hau",
+      "address": "Quảng Nam",
+      "point": "9"
+    },
+    {
+      "id": "apw-2VW",
+      "name": "blue",
+      "address": "Đà Nẵng",
+      "point": 3
+    },
+    {
+      "id": "ir-3VLH",
+      "name": "niv",
+      "address": "Đà Nẵng",
+      "point": 3
+    }
+  ]
+}

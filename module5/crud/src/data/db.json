@@ -1,0 +1,54 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "iphone",
+      "price": 100,
+      "category": {
+        "id": 1,
+        "name": "category 1"
+      }
+    },
+    {
+      "id": 2,
+      "name": "product 2",
+      "price": 200,
+      "category": {
+        "id": 2,
+        "name": "category 2"
+      }
+    },
+    {
+      "id": 3,
+      "name": "product 3",
+      "price": 300,
+      "category": {
+        "id": 3,
+        "name": "category 3"
+      }
+    },
+    {
+      "name": "samsung",
+      "price": "555555",
+      "category": {
+        "id": 3,
+        "name": "category 3"
+      },
+      "id": 4
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "category 1"
+    },
+    {
+      "id": 2,
+      "name": "category 2"
+    },
+    {
+      "id": 3,
+      "name": "category 3"
+    }
+  ]
+}

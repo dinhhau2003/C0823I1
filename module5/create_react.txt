@@ -1,0 +1,4 @@
+Tạo dự án:
+npx create-react-app ss3
+ npm i npm -g( nếu lỗi)
+Chạy: npm start
