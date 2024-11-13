@@ -1,0 +1,13 @@
+/* Nút thêm mới nhân viên với màu xanh dương nhạt */
+.btn-add {
+    background-color: #bd965f; /* Màu xanh dương nhạt */
+    border-color: #99ccff;    /* Màu viền xanh dương nhạt */
+    color: black;
+    border-radius: 50px;/* Màu chữ trắng */
+}
+
+.btn-add:hover {
+    background-color: #bd965f; /* Màu xanh dương khi hover */
+    border-color: #bd965f;
+    color: white/* Màu viền xanh dương khi hover */
+}

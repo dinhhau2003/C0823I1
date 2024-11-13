@@ -5,11 +5,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="662a9d3b-21c8-4f33-be18-e8784365b348" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/[C1023I1]Prototype_NguyenDinhHau/boo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/[C1023I1]Prototype_NguyenDinhHau/css/list.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/[C1023I1]Prototype_NguyenDinhHau/dashboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/[C1023I1]Prototype_NguyenDinhHau/img/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/[C1023I1]Prototype_NguyenDinhHau/img/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/[C1023I1]Prototype_NguyenDinhHau/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/API/src/main/java/com/example/api/controller/EmployeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/API/src/main/java/com/example/api/entity/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/API/src/main/java/com/example/api/repository/IEmployeeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/API/src/main/java/com/example/api/service/impl/EmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/API/src/main/java/com/example/api/service/impl/IEmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/C1023L1-BE/src/main/java/com/example/c1023l1be/Controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/C1023L1-BE/src/main/java/com/example/c1023l1be/Dto/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/C1023L1-BE/src/main/java/com/example/c1023l1be/Entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/C1023L1-BE/src/main/java/com/example/c1023l1be/Entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/C1023L1-BE/src/main/java/com/example/c1023l1be/Repository/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/C1023L1-BE/src/main/java/com/example/c1023l1be/Repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/C1023L1-BE/src/main/java/com/example/c1023l1be/Service/impl/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/C1023L1-BE/src/main/java/com/example/c1023l1be/Service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/Product_firebase/src/main/java/com/example/product_firebase/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/Product_firebase/src/main/java/com/example/product_firebase/entity/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/Product_firebase/src/main/java/com/example/product_firebase/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/Product_firebase/src/main/java/com/example/product_firebase/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/Product_firebase/src/main/java/com/example/product_firebase/service/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/c1023l1-fe/src/Component/ListUser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/c1023l1-fe/src/Service/UserService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/employee/src/Component/Appbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/employee/src/Component/CreateEmployee.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/employee/src/Component/Employee.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/employee/src/Component/UpdateEmployee.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/employee/src/Service/EmployeeService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/fire_base_spring/src/main/java/com/example/fire_base_spring/Controller/EmployeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/fire_base_spring/src/main/java/com/example/fire_base_spring/Entity/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/fire_base_spring/src/main/java/com/example/fire_base_spring/Repository/EmployeeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/fire_base_spring/src/main/java/com/example/fire_base_spring/Service/EmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/fire_base_spring/src/main/java/com/example/fire_base_spring/Service/EmployeeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/firebase/src/Component/AddProduct.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/firebase/src/Component/ProductList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/firebase/src/UploadImage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/firebase/src/firebase.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/quanly/src/QuanLyNhanVien.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/s14/KTSNT.html" beforeDir="false" afterPath="$PROJECT_DIR$/s14/KTSNT.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss16/mo_ta_hcn.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss16/mo_ta_hcn.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/1.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/testt.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/testt.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/oop/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/OnTapTi/src/main/java/com/example/ontapti/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/OnTapTi/src/main/java/com/example/ontapti/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5/demo-1" beforeDir="false" afterPath="$PROJECT_DIR$/../module5/demo-1" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,12 +60,16 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
         <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -40,23 +84,38 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/Codegym/C0823I1/casestudy/if_and_switch",
+    "git-widget-placeholder": "<unknown>",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "E:/Codegym/C0823I1/Manager_cf/C1023L1-FE/project-c1023l1",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Codegym\C0823I1\module1\[C1023I1]Prototype_NguyenDinhHau\img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Codegym\C0823I1\module1\Design" />
       <recent name="E:\Codegym\C0823I1\module1\s14\quan_li_san_pham" />
       <recent name="E:\Codegym\C0823I1\module1\ss13\bai1" />
       <recent name="E:\Codegym\C0823I1\module1\ss7\bien_kieudl_toantu" />
       <recent name="E:\Codegym\C0823I1\module1\ss4\taocv" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-WS-243.21565.180" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -83,6 +142,25 @@
       <workItem from="1697633341776" duration="5737000" />
       <workItem from="1698058058389" duration="13224000" />
       <workItem from="1698232622765" duration="26364000" />
+      <workItem from="1727062724275" duration="1936000" />
+      <workItem from="1727097563398" duration="593000" />
+      <workItem from="1727098448055" duration="668000" />
+      <workItem from="1727190009327" duration="1894000" />
+      <workItem from="1727192183379" duration="37697000" />
+      <workItem from="1727503447715" duration="1696000" />
+      <workItem from="1727812365126" duration="32000" />
+      <workItem from="1728303789146" duration="611000" />
+      <workItem from="1728472625676" duration="95000" />
+      <workItem from="1728480100561" duration="18000" />
+      <workItem from="1730037419018" duration="4347000" />
+      <workItem from="1730114605877" duration="1575000" />
+      <workItem from="1730117588611" duration="24243000" />
+      <workItem from="1730369358494" duration="591000" />
+      <workItem from="1730385869609" duration="589000" />
+      <workItem from="1730477503494" duration="2237000" />
+      <workItem from="1730480503598" duration="2335000" />
+      <workItem from="1730564049226" duration="720000" />
+      <workItem from="1731484775601" duration="629000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quản Lý Cà Phê - Admin Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* Custom styles */
+    .sidebar {
+      min-height: 100vh;
+      background-color: #343a40;
+      padding-top: 20px;
+    }
+    .sidebar a {
+      color: #fff;
+      margin: 10px 0;
+    }
+    .sidebar a:hover {
+      color: #ffc107;
+    }
+    .header {
+      background-color: #f8f9fa;
+      padding: 15px;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer {
+      background-color: #343a40;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    .content {
+      padding: 20px;
+      margin-left: 240px; /* Tăng margin-left để tránh bị che khuất */
+    }
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+    .dropdown-menu {
+      transition: max-height 0.3s ease-in-out; /* Thêm hiệu ứng chuyển động cho dropdown */
+    }
+  </style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar d-flex flex-column position-fixed p-3">
+  <h4 class="text-center text-white">Coffee Shop Admin</h4>
+  <hr class="bg-secondary">
+
+  <!-- Dropdown for Employee Management -->
+  <div class="dropdown">
+    <a href="#" class="nav-link dropdown-toggle" id="employeeDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <i class="fas fa-users"></i> Quản lý nhân viên
+    </a>
+    <div class="dropdown-menu" aria-labelledby="employeeDropdown">
+      <a class="dropdown-item" href="#">
+        <i class="fas fa-id-card"></i> Thông tin nhân viên
+      </a>
+      <a class="dropdown-item" href="#">
+        <i class="fas fa-plus"></i> Thêm nhân viên
+      </a>
+      <a class="dropdown-item" href="#">
+        <i class="fas fa-edit"></i> Sửa thông tin nhân viên
+      </a>
+    </div>
+  </div>
+
+  <a href="#" class="nav-link">
+    <i class="fas fa-coffee"></i> Quản lý sản phẩm
+  </a>
+</div>
+
+<!-- Header -->
+<div class="header">
+  <div>
+    <img src="https://via.placeholder.com/40" alt="Avatar" class="avatar mr-2">
+    <span>Admin</span>
+  </div>
+  <div>
+    <i class="fas fa-bell fa-lg text-secondary"></i>
+  </div>
+</div>
+
+<!-- Main Content -->
+<div class="content">
+  <h2>Dashboard</h2>
+  <p>Chào mừng bạn đến với trang quản lý quán cà phê!</p>
+  <!-- Add your dashboard content here -->
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <p>&copy; 2024 Coffee Shop Admin Dashboard. All rights reserved.</p>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  $(document).ready(function () {
+    // Thay đổi để ẩn tam giác dropdown
+    $('.dropdown-toggle').on('click', function (e) {
+      e.preventDefault(); // Ngăn chặn hành vi mặc định
+      const $dropdownMenu = $(this).next('.dropdown-menu');
+      const isVisible = $dropdownMenu.is(':visible');
+      $('.dropdown-menu').slideUp(); // Ẩn tất cả các dropdown khác
+      if (!isVisible) {
+        $dropdownMenu.slideDown(); // Hiện dropdown nếu không nhìn thấy
+      }
+    });
+
+    // Nhấn bên ngoài để ẩn dropdown
+    $(document).on('click', function (e) {
+      if (!$(e.target).closest('.dropdown').length) {
+        $('.dropdown-menu').slideUp();
+      }
+    });
+  });
+</script>
+</body>
+</html>
