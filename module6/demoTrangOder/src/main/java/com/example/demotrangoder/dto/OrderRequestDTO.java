@@ -1,8 +1,19 @@
 package com.example.demotrangoder.dto;
 
-import java.util.List;
+import com.example.demotrangoder.model.Table;
+import com.example.demotrangoder.model.User;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-public class CallOderRequestDTO {
-    private Long tableId;
-    private Long userId;
+import java.util.List;
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+public class OrderRequestDTO {
+    private User user;
+    private Table table;
+    private List<ProductDTO> products;
 }
